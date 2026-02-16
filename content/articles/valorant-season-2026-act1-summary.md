@@ -4,13 +4,14 @@ description: "Riot Gamesの『VALORANT』がSeason 2026に突入。新武器バ�
 category: "title"
 tags: ["VALORANT", "Season 2026", "パッチノート", "新武器"]
 date: "2026-02-16"
+thumbnail: "https://static.wikia.nocookie.net/valorant/images/b/bb/Season_2026.png/revision/latest/scale-to-width-down/800?cb=20260107131634"
 ---
 
 Riot Gamesは2026年1月7日、タクティカルFPS『[VALORANT](https://playvalorant.com/ja-jp/)』の大型アップデート"Season 2026"を開始した。パッチ12.00の適用にともない、新武器やマップの復活、リプレイ機能をはじめとする多数の新要素が実装されている。
 
 本記事では、Season 2026 Act 1で追加・変更された要素をまとめてお届けする。
 
-![VALORANT Season 2026 キービジュアル。Alpha EarthとOmega Earthの対立が描かれている](https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt40e1503f498b5930/VALORANT_EP10_KeyArt.jpg)
+![VALORANT Season 2026 キービジュアル](https://static.wikia.nocookie.net/valorant/images/b/bb/Season_2026.png/revision/latest/scale-to-width-down/1200?cb=20260107131634)
 
 <small>※画像は『VALORANT』公式より引用</small>
 
@@ -20,7 +21,7 @@ Riot Gamesは2026年1月7日、タクティカルFPS『[VALORANT](https://playva
 
 Season 2026最大のトピックが、新サイドアーム**「バンディット」**の追加だ。『VALORANT』に新武器が追加されるのは非常に珍しく、コミュニティの注目度も高い。
 
-![バンディットはゴーストとシェリフの中間に位置する600クレジットのサイドアーム](https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt123456bandit/VALORANT_Bandit_Reveal.jpg)
+![新サイドアーム「バンディット」。ポーテッドバレルとバットストックが特徴的なデザイン](https://static.wikia.nocookie.net/valorant/images/1/1f/Bandit.png/revision/latest/scale-to-width-down/1000?cb=20260106171831)
 
 <small>※画像は『VALORANT』公式より引用</small>
 
@@ -39,6 +40,10 @@ Season 2026最大のトピックが、新サイドアーム**「バンディッ�
 ## マップ"ブリーズ"が約1年半ぶりに復活。大規模なレイアウト変更も
 
 2024年後半にマッププールから外されていた**ブリーズ**が、大規模なリワークを経て復活した。
+
+![リワーク後のブリーズのミニマップ。従来よりも通路が整理されている](https://static.wikia.nocookie.net/valorant/images/7/78/Breeze_minimap.png/revision/latest/scale-to-width-down/600?cb=20260107131634)
+
+<small>※画像は『VALORANT』公式より引用</small>
 
 変更の要点は以下のとおり。
 
