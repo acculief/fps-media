@@ -1,5 +1,5 @@
 import { getArticle, getAllArticles } from "@/lib/articles";
-import { CATEGORIES } from "@/lib/constants";
+import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -19,6 +19,13 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.description,
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      type: "article",
+      publishedTime: article.date,
+      url: `${SITE_URL}/articles/${slug}`,
+    },
   };
 }
 
@@ -34,36 +41,58 @@ export default async function ArticlePage({
 
   const category = CATEGORIES.find((c) => c.slug === article.category);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/articles/${slug}`,
+    },
+  };
+
   return (
-    <article className="max-w-3xl mx-auto">
-      {category && (
-        <a
-          href={`/articles?cat=${category.slug}`}
-          className="text-sm text-cyan-400 hover:underline"
-        >
-          {category.label}
-        </a>
-      )}
-      <h1 className="text-3xl font-bold mt-2 mb-4">{article.title}</h1>
-      <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
-        <time>{article.date}</time>
-        {article.tags.length > 0 && (
-          <div className="flex gap-2">
-            {article.tags.map((tag) => (
-              <span
-                key={tag}
-                className="bg-gray-800 px-2 py-0.5 rounded text-xs"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-      </div>
-      <div
-        className="article-content"
-        dangerouslySetInnerHTML={{ __html: article.content }}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    </article>
+      <article className="max-w-3xl mx-auto">
+        {category && (
+          <a
+            href={`/articles?cat=${category.slug}`}
+            className="text-sm text-cyan-400 hover:underline"
+          >
+            {category.label}
+          </a>
+        )}
+        <h1 className="text-3xl font-bold mt-2 mb-4">{article.title}</h1>
+        <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
+          <time dateTime={article.date}>{article.date}</time>
+          {article.tags.length > 0 && (
+            <div className="flex gap-2">
+              {article.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="bg-gray-800 px-2 py-0.5 rounded text-xs"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+        <div
+          className="article-content"
+          dangerouslySetInnerHTML={{ __html: article.content }}
+        />
+      </article>
+    </>
   );
 }

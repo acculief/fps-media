@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { SITE_NAME, SITE_DESCRIPTION, CATEGORIES } from "@/lib/constants";
+import { Noto_Sans_JP } from "next/font/google";
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, CATEGORIES } from "@/lib/constants";
 import "./globals.css";
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -8,6 +14,22 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="min-h-screen">
+      <body className={`${notoSansJP.variable} font-sans min-h-screen`}>
         <Header />
         <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
         <Footer />
@@ -30,7 +52,15 @@ function Header() {
   return (
     <header className="border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" className="text-2xl font-bold text-cyan-400 tracking-tight">
+        <a href="/" className="flex items-center gap-2 text-2xl font-bold text-cyan-400 tracking-tight">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="13" stroke="currentColor" strokeWidth="2"/>
+            <circle cx="14" cy="14" r="3" fill="currentColor"/>
+            <line x1="14" y1="1" x2="14" y2="7" stroke="currentColor" strokeWidth="2"/>
+            <line x1="14" y1="21" x2="14" y2="27" stroke="currentColor" strokeWidth="2"/>
+            <line x1="1" y1="14" x2="7" y2="14" stroke="currentColor" strokeWidth="2"/>
+            <line x1="21" y1="14" x2="27" y2="14" stroke="currentColor" strokeWidth="2"/>
+          </svg>
           {SITE_NAME}
         </a>
         <nav className="hidden md:flex gap-6 text-sm">
