@@ -78,3 +78,31 @@ body {
   color: #fff;
   font-weight: 700;
 }
+
+.article-content img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.article-content small {
+  display: block;
+  color: #6b7280;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-content hr {
+  border: none;
+  border-top: 1px solid #1f2937;
+  margin: 2.5rem 0;
+}
+
+.article-content blockquote {
+  border-left: 3px solid #22d3ee;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #9ca3af;
+  font-style: italic;
+}
