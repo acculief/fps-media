@@ -136,13 +136,13 @@ Ver.2.6では多数の利便性改善が行われた。
 
 ---
 
-## 新バングブー「ビッゲストファン」
+## 新ボンプ「ビッゲストファン」
 
-![S級バングブー「ビッゲストファン」](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
+![S級ボンプ「ビッゲストファン」](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-エーテル属性のS級バングブー**「ビッゲストファン」**が追加。妄想エンジェルパーティとの相性が良い。
+エーテル属性のS級ボンプ**「ビッゲストファン」**が追加。妄想エンジェルパーティとの相性が良い。
 
 ---
 

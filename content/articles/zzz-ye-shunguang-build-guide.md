@@ -40,7 +40,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 葉舜光は**「開悟」状態**に移行することで青明剣力を蓄積し、連続攻撃で高火力を叩き出す。開悟状態の維持とエーテルヴェールの連携が立ち回りの核となる。
 
-![葉舜光のインゲーム画面](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/18/Agent_Ye_Shunguang_In-Game_City.png/revision/latest/scale-to-width-down/800)
+![葉舜光のインゲーム画面](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/91/Agent_Ye_Shunguang_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20251230172434)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

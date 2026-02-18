@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの舞台「新エリドゥ」のマッ
 category: "guide"
 tags: ["新エリドゥ", "攻略", "マップ", "初心者"]
 date: "2026-02-12"
-thumbnail: "https://fastcdn.hoyoverse.com/content-v2/nap/7a7ebd55b5d448b18e498009ee176498_5765842184498736073.png"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/26/New_Eridu_Settlers_Guide_-_The_City_Life_-_Cover_Image.png/revision/latest/scale-to-width-down/800?cb=20220605043341"
 ---
 
 新エリドゥ（New Eridu）はゼンレスゾーンゼロの舞台となる都市。ストーリー進行に伴い解放されるエリアには、様々な施設や隠し要素が存在する。
@@ -33,7 +33,7 @@ thumbnail: "https://fastcdn.hoyoverse.com/content-v2/nap/7a7ebd55b5d448b18e49800
 **ランダムプレイ（プレイヤー拠点）**
 - テレビでホロウ依頼を受注
 - インターノットからのメッセージ確認
-- バングブーの管理・育成
+- ボンプの管理・育成
 - ガチャ（シグナルサーチ）
 
 **ビデオショップ**

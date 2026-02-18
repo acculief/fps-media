@@ -120,7 +120,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Ange
 | **1枠目** | アタッカー or 異常 | 1人 |
 | **2枠目** | サポート | 1人 |
 | **3枠目** | 撃破 | 1人 |
-| **4枠目** | バングブー | 1体 |
+| **4枠目** | ボンプ | 1体 |
 
 ### 式輿防衛戦の2チーム編成例
 

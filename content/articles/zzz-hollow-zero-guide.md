@@ -21,7 +21,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Icon
 
 ### ゲームフロー
 
-1. **チーム編成**: 3人のエージェント + ボンプ（バングブー）を選択
+1. **チーム編成**: 3人のエージェント + ボンプ（ボンプ）を選択
 2. **ホロウ探索**: マス目状のマップを移動し、イベント・戦闘・ショップなどを選択
 3. **バフ獲得**: 戦闘やイベントでレゾニウム・カード・ギアを獲得
 4. **ボス戦**: 最終ステージのボスを撃破してクリア
@@ -34,11 +34,11 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Icon
 |---|---|---|
 | **レゾニウム** | エージェントの能力を直接強化するバフ。攻撃力UP、会心率UP、属性ダメージUPなど | 戦闘報酬、イベントマス |
 | **カード** | 条件付きの強力なバフ。「回避成功時にATK+30%」など | カードマス、ショップ |
-| **ギア** | バングブーに装着する補助バフ。回復やシールド、追加攻撃など | ギアマス、ボス報酬 |
+| **ギア** | ボンプに装着する補助バフ。回復やシールド、追加攻撃など | ギアマス、ボス報酬 |
 
-ギアはバングブー（ボンプ）に装着するバフで、パーティ全体の生存力や火力を底上げする重要な要素だ。
+ギアはボンプ（ボンプ）に装着するバフで、パーティ全体の生存力や火力を底上げする重要な要素だ。
 
-![バングブー「ビッゲストファン」のアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
+![ボンプ「ビッゲストファン」のアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
