@@ -120,6 +120,30 @@ body {
   font-style: italic;
 }
 
+.article-content pre {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-content code {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 0.875em;
+}
+
+.article-content :not(pre) > code {
+  background: #1f2937;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  color: #fbbf24;
+}
+
 /* Focus visible for keyboard navigation */
 a:focus-visible,
 button:focus-visible {

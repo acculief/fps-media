@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getAllArticles } from "@/lib/articles";
 import { CATEGORIES, SITE_URL } from "@/lib/constants";
 import { SearchBox } from "@/components/SearchBox";
@@ -20,7 +21,9 @@ export default function SearchPage() {
   return (
     <div className="max-w-3xl mx-auto">
       <h1 className="text-2xl font-bold mb-6">記事を検索</h1>
-      <SearchBox articles={articles} />
+      <Suspense>
+        <SearchBox articles={articles} />
+      </Suspense>
     </div>
   );
 }

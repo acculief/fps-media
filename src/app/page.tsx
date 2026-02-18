@@ -104,17 +104,23 @@ export default function Home() {
       {/* Categories */}
       <section className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-16">
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat.slug}
-              href={`/articles?cat=${cat.slug}`}
-              className={`${cat.bg} border ${cat.border} rounded-lg p-4 text-center hover:brightness-125 transition-all duration-200`}
-            >
-              <span className={`text-sm font-medium ${cat.color}`}>
-                {cat.label}
-              </span>
-            </Link>
-          ))}
+          {CATEGORIES.map((cat) => {
+            const count = articles.filter((a) => a.category === cat.slug).length;
+            return (
+              <Link
+                key={cat.slug}
+                href={`/articles?cat=${cat.slug}`}
+                className={`${cat.bg} border ${cat.border} rounded-lg p-4 text-center hover:brightness-125 transition-all duration-200`}
+              >
+                <span className={`text-sm font-medium ${cat.color} block`}>
+                  {cat.label}
+                </span>
+                <span className="text-xs text-gray-500 mt-1 block">
+                  {count}件
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

@@ -29,6 +29,7 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.description,
+    keywords: article.tags,
     alternates: {
       canonical: url,
     },
@@ -38,11 +39,13 @@ export async function generateMetadata({
       type: "article",
       publishedTime: article.date,
       url,
+      ...(article.thumbnail ? { images: [{ url: article.thumbnail }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
+      ...(article.thumbnail ? { images: [article.thumbnail] } : {}),
     },
   };
 }
@@ -73,13 +76,16 @@ export default async function ArticlePage({
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    ...(article.thumbnail ? { image: article.thumbnail } : {}),
     author: {
       "@type": "Organization",
       name: SITE_NAME,
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
+      url: SITE_URL,
     },
     keywords: article.tags.join(", "),
     mainEntityOfPage: {
@@ -156,24 +162,31 @@ export default async function ArticlePage({
             {article.title}
           </span>
         </nav>
-        <h1 className="text-3xl font-bold mt-2 mb-4">{article.title}</h1>
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-8 flex-wrap">
+        {category && (
+          <span
+            className={`inline-block text-xs font-medium px-2.5 py-1 rounded ${category.bg} ${category.border} border ${category.color} mb-3`}
+          >
+            {category.label}
+          </span>
+        )}
+        <h1 className="text-3xl font-bold mb-4">{article.title}</h1>
+        <div className="flex items-center gap-4 text-sm text-gray-500 mb-4 flex-wrap">
           <time dateTime={article.date}>{article.date}</time>
           <span>約{readingTime}分で読めます</span>
-          {article.tags.length > 0 && (
-            <div className="flex gap-2 flex-wrap">
-              {article.tags.map((tag) => (
-                <Link
-                  key={tag}
-                  href={`/tags/${encodeURIComponent(tag)}`}
-                  className="bg-gray-800 px-2 py-0.5 rounded text-xs hover:bg-gray-700 hover:text-white transition-colors"
-                >
-                  {tag}
-                </Link>
-              ))}
-            </div>
-          )}
         </div>
+        {article.tags.length > 0 && (
+          <div className="flex gap-2 flex-wrap mb-8">
+            {article.tags.map((tag) => (
+              <Link
+                key={tag}
+                href={`/tags/${encodeURIComponent(tag)}`}
+                className="bg-gray-800 px-2.5 py-1 rounded text-xs text-gray-400 hover:bg-gray-700 hover:text-white transition-colors"
+              >
+                #{tag}
+              </Link>
+            ))}
+          </div>
+        )}
 
         {/* Table of Contents */}
         {article.toc.length >= 3 && (

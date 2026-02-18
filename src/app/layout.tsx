@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import Link from "next/link";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, CATEGORIES } from "@/lib/constants";
 import { Header } from "@/components/Header";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -48,8 +49,27 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${notoSansJP.variable} font-sans min-h-screen`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: SITE_NAME,
+              description: SITE_DESCRIPTION,
+              url: SITE_URL,
+              inLanguage: "ja",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${SITE_URL}/search?q={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         <Header />
         <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
@@ -106,6 +126,14 @@ function Footer() {
                   className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   タグ一覧
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/search"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
+                >
+                  サイト内検索
                 </Link>
               </li>
               <li>

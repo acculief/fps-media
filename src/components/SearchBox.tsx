@@ -1,6 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import Link from "next/link";
 
 type SearchableArticle = {
   slug: string;
@@ -27,7 +29,38 @@ function highlightMatch(text: string, query: string): React.ReactNode {
 }
 
 export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [query, setQuery] = useState(searchParams.get("q") ?? "");
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const updateUrl = useCallback(
+    (q: string) => {
+      const trimmed = q.trim();
+      if (trimmed) {
+        router.replace(`/search?q=${encodeURIComponent(trimmed)}`, { scroll: false });
+      } else {
+        router.replace("/search", { scroll: false });
+      }
+    },
+    [router]
+  );
+
+  useEffect(() => {
+    const timer = setTimeout(() => updateUrl(query), 300);
+    return () => clearTimeout(timer);
+  }, [query, updateUrl]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setQuery("");
+        inputRef.current?.blur();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -59,6 +92,7 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
         <input
+          ref={inputRef}
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -66,6 +100,18 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
           autoFocus
           className="w-full bg-gray-900 border border-gray-700 rounded-lg pl-12 pr-4 py-3.5 text-base placeholder-gray-600 focus:border-gray-400 focus:outline-none transition-colors"
         />
+        {query && (
+          <button
+            onClick={() => { setQuery(""); inputRef.current?.focus(); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 transition-colors"
+            aria-label="検索をクリア"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {query.trim() && (
@@ -79,7 +125,7 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
       {results.length > 0 && (
         <div className="space-y-4">
           {results.map((article) => (
-            <a
+            <Link
               key={article.slug}
               href={`/articles/${article.slug}`}
               className="block bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors"
@@ -108,7 +154,7 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
                   ))}
                 </div>
               )}
-            </a>
+            </Link>
           ))}
         </div>
       )}
