@@ -10,6 +10,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import { ShareButtons } from "@/components/ShareButtons";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -175,7 +176,7 @@ export default async function ArticlePage({
           <span>約{readingTime}分で読めます</span>
         </div>
         {article.tags.length > 0 && (
-          <div className="flex gap-2 flex-wrap mb-8">
+          <div className="flex gap-2 flex-wrap mb-6">
             {article.tags.map((tag) => (
               <Link
                 key={tag}
@@ -185,6 +186,20 @@ export default async function ArticlePage({
                 #{tag}
               </Link>
             ))}
+          </div>
+        )}
+
+        {/* Hero Thumbnail */}
+        {article.thumbnail && (
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-10 bg-gray-800">
+            <Image
+              src={article.thumbnail}
+              alt={article.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
           </div>
         )}
 
@@ -227,17 +242,22 @@ export default async function ArticlePage({
         {(prev || next) && (
           <nav
             aria-label="前後の記事"
-            className="mt-10 pt-6 border-t border-gray-800 grid grid-cols-2 gap-4"
+            className="mt-10 pt-6 border-t border-gray-800 grid grid-cols-1 sm:grid-cols-2 gap-3"
           >
             {prev ? (
               <Link
                 href={`/articles/${prev.slug}`}
-                className="group text-left"
+                className="group flex items-center gap-3 bg-gray-900/60 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors"
               >
-                <span className="text-xs text-gray-600">前の記事</span>
-                <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
-                  {prev.title}
-                </span>
+                <svg className="w-5 h-5 text-gray-600 group-hover:text-gray-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+                <div className="min-w-0">
+                  <span className="text-xs text-gray-600 block">前の記事</span>
+                  <span className="text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-0.5 block">
+                    {prev.title}
+                  </span>
+                </div>
               </Link>
             ) : (
               <span />
@@ -245,12 +265,17 @@ export default async function ArticlePage({
             {next ? (
               <Link
                 href={`/articles/${next.slug}`}
-                className="group text-right"
+                className="group flex items-center gap-3 bg-gray-900/60 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors sm:flex-row-reverse sm:text-right"
               >
-                <span className="text-xs text-gray-600">次の記事</span>
-                <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
-                  {next.title}
-                </span>
+                <svg className="w-5 h-5 text-gray-600 group-hover:text-gray-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+                <div className="min-w-0">
+                  <span className="text-xs text-gray-600 block">次の記事</span>
+                  <span className="text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-0.5 block">
+                    {next.title}
+                  </span>
+                </div>
               </Link>
             ) : (
               <span />

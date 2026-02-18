@@ -1,0 +1,31 @@
+{
+  "name": "ゼンゼロ通信",
+  "short_name": "ゼンゼロ通信",
+  "description": "ゼンレスゾーンゼロの最新情報をお届けする非公式ニュースメディア",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#FACC15",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["games", "news", "entertainment"],
+  "lang": "ja",
+  "dir": "ltr"
+}

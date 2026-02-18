@@ -1,4 +1,4 @@
-import { getAllArticles, getPopularArticles } from "@/lib/articles";
+import { getAllArticles, getPopularArticles, getAllTags } from "@/lib/articles";
 import { SITE_NAME, SITE_DESCRIPTION, CATEGORIES } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   const articles = getAllArticles();
+  const tags = getAllTags();
   const [hero, ...rest] = articles;
   const latestArticles = rest.slice(0, 4);
   const popularArticles = getPopularArticles(5);
@@ -80,6 +81,22 @@ export default function Home() {
           </Link>
         </section>
       )}
+
+      {/* Stats Bar */}
+      <section className="mb-12 grid grid-cols-3 gap-4">
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+          <span className="text-2xl font-bold text-yellow-400">{articles.length}</span>
+          <span className="text-xs text-gray-500 block mt-1">記事数</span>
+        </div>
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+          <span className="text-2xl font-bold text-yellow-400">{CATEGORIES.length}</span>
+          <span className="text-xs text-gray-500 block mt-1">カテゴリ</span>
+        </div>
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+          <span className="text-2xl font-bold text-yellow-400">{tags.length}</span>
+          <span className="text-xs text-gray-500 block mt-1">タグ</span>
+        </div>
+      </section>
 
       {/* Latest Articles */}
       {latestArticles.length > 0 && (

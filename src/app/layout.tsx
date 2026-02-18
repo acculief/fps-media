@@ -33,6 +33,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.svg",
+    apple: "/apple-icon",
+  },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: SITE_NAME,
   },
   alternates: {
     types: {
