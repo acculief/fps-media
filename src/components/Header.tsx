@@ -58,7 +58,7 @@ export function Header() {
           </svg>
           {SITE_NAME}
         </a>
-        <nav className="hidden md:flex gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-6 text-sm">
           {CATEGORIES.map((cat) => (
             <a
               key={cat.slug}
@@ -68,6 +68,25 @@ export function Header() {
               {cat.label}
             </a>
           ))}
+          <a
+            href="/search"
+            aria-label="記事を検索"
+            className="text-gray-400 hover:text-yellow-400 transition-colors"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </a>
         </nav>
         <button
           onClick={() => setOpen(!open)}
@@ -117,7 +136,14 @@ export function Header() {
                 {cat.label}
               </a>
             ))}
-            <div className="border-t border-gray-800 mt-1 pt-2">
+            <div className="border-t border-gray-800 mt-1 pt-2 flex flex-col gap-1">
+              <a
+                href="/search"
+                onClick={() => setOpen(false)}
+                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-yellow-400 transition-colors block"
+              >
+                記事を検索
+              </a>
               <a
                 href="/tags"
                 onClick={() => setOpen(false)}

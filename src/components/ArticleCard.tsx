@@ -2,8 +2,14 @@ import Image from "next/image";
 import { ArticleMeta } from "@/lib/articles";
 import { CATEGORIES } from "@/lib/constants";
 
+function isNew(dateStr: string): boolean {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  return diff < 7 * 24 * 60 * 60 * 1000;
+}
+
 export function ArticleCard({ article }: { article: ArticleMeta }) {
   const category = CATEGORIES.find((c) => c.slug === article.category);
+  const fresh = isNew(article.date);
 
   return (
     <a
@@ -28,6 +34,11 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
               <circle cx="14" cy="12" r="3" fill="currentColor"/>
             </svg>
           </div>
+        )}
+        {fresh && (
+          <span className="absolute top-2 right-2 bg-yellow-400 text-gray-900 text-[10px] font-bold px-1.5 py-0.5 rounded">
+            NEW
+          </span>
         )}
       </div>
       <div className="p-4">
