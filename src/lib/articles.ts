@@ -147,6 +147,38 @@ export function getArticlesByTag(tag: string): ArticleMeta[] {
   return getAllArticles().filter((a) => a.tags.includes(tag));
 }
 
+export type SeriesInfo = {
+  label: string;
+  items: { slug: string; name: string }[];
+};
+
+export function getArticleSeries(slug: string): SeriesInfo | null {
+  const all = getAllArticles();
+
+  if (/^zzz-ver\d+-(?:update|launch)-summary$/.test(slug)) {
+    const items = all
+      .filter((a) =>
+        /^zzz-ver\d+-(?:update|launch)-summary$/.test(a.slug)
+      )
+      .sort((a, b) => a.slug.localeCompare(b.slug))
+      .map((a) => {
+        const m = a.slug.match(/zzz-ver(\d)(\d)/);
+        return { slug: a.slug, name: m ? `Ver.${m[1]}.${m[2]}` : a.slug };
+      });
+    return { label: "バージョンアップデート一覧", items };
+  }
+
+  if (slug.endsWith("-build-guide")) {
+    const items = all
+      .filter((a) => a.slug.endsWith("-build-guide"))
+      .sort((a, b) => (a.date > b.date ? -1 : 1))
+      .map((a) => ({ slug: a.slug, name: a.tags[0] ?? a.title }));
+    return { label: "キャラクタービルドガイド", items };
+  }
+
+  return null;
+}
+
 function textToId(text: string): string {
   return text
     .toLowerCase()

@@ -4,6 +4,7 @@ import {
   getRelatedArticles,
   getReadingTime,
   getAdjacentArticles,
+  getArticleSeries,
 } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
@@ -71,6 +72,7 @@ export default async function ArticlePage({
     article.category,
     article.tags
   );
+  const series = getArticleSeries(slug);
   const articleUrl = `${SITE_URL}/articles/${slug}`;
 
   const jsonLd = {
@@ -203,6 +205,36 @@ export default async function ArticlePage({
               sizes="(max-width: 768px) 100vw, 768px"
               priority
             />
+          </div>
+        )}
+
+        {/* Series Navigation */}
+        {series && (
+          <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-5 mb-6">
+            <h2 className="text-sm font-bold text-gray-400 mb-3">
+              {series.label}
+            </h2>
+            <div className="flex gap-2 flex-wrap">
+              {series.items.map((item) => {
+                const isCurrent = item.slug === slug;
+                return isCurrent ? (
+                  <span
+                    key={item.slug}
+                    className="text-xs px-3 py-1.5 rounded-lg bg-yellow-400/10 border border-yellow-400/30 text-yellow-400 font-bold"
+                  >
+                    {item.name}
+                  </span>
+                ) : (
+                  <Link
+                    key={item.slug}
+                    href={`/articles/${item.slug}`}
+                    className="text-xs px-3 py-1.5 rounded-lg border border-gray-700 text-gray-500 hover:border-gray-500 hover:text-gray-300 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         )}
 
