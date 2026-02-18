@@ -25,6 +25,26 @@
       "purpose": "maskable"
     }
   ],
+  "shortcuts": [
+    {
+      "name": "記事一覧",
+      "short_name": "記事",
+      "url": "/articles",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "記事を検索",
+      "short_name": "検索",
+      "url": "/search",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "タグ一覧",
+      "short_name": "タグ",
+      "url": "/tags",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ],
   "categories": ["games", "news", "entertainment"],
   "lang": "ja",
   "dir": "ltr"

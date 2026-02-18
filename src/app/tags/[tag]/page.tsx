@@ -1,5 +1,5 @@
 import { getAllTags, getArticlesByTag } from "@/lib/articles";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -33,18 +33,58 @@ export default async function TagPage({
   const { tag } = await params;
   const decoded = decodeURIComponent(tag);
   const articles = getArticlesByTag(decoded);
+  const tagUrl = `${SITE_URL}/tags/${encodeURIComponent(decoded)}`;
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "タグ一覧", item: `${SITE_URL}/tags` },
+      { "@type": "ListItem", position: 3, name: decoded },
+    ],
+  };
+
+  const collectionLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `「${decoded}」の記事一覧`,
+    url: tagUrl,
+    isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: articles.length,
+      itemListElement: articles.slice(0, 10).map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE_URL}/articles/${a.slug}`,
+        name: a.title,
+      })),
+    },
+  };
 
   return (
     <div>
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }}
+      />
+      <nav
+        aria-label="パンくずリスト"
+        className="flex items-center gap-2 text-sm text-gray-500 mb-4"
+      >
         <Link href="/" className="hover:text-white transition-colors">
           ホーム
         </Link>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
         <Link href="/tags" className="hover:text-white transition-colors">
           タグ一覧
         </Link>
-        <span>/</span>
+        <span aria-hidden="true">/</span>
         <span className="text-gray-600">{decoded}</span>
       </nav>
 

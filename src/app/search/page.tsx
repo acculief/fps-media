@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { getAllArticles } from "@/lib/articles";
 import { CATEGORIES, SITE_URL } from "@/lib/constants";
 import { SearchBox } from "@/components/SearchBox";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,6 +21,16 @@ export default function SearchPage() {
 
   return (
     <div className="max-w-3xl mx-auto">
+      <nav
+        aria-label="パンくずリスト"
+        className="flex items-center gap-2 text-sm text-gray-500 mb-4"
+      >
+        <Link href="/" className="hover:text-white transition-colors">
+          ホーム
+        </Link>
+        <span aria-hidden="true">/</span>
+        <span className="text-gray-600">検索</span>
+      </nav>
       <h1 className="text-2xl font-bold mb-6">記事を検索</h1>
       <Suspense>
         <SearchBox articles={articles} />

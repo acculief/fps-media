@@ -1,5 +1,5 @@
 import { getAllArticles, getArticlesByCategory } from "@/lib/articles";
-import { CATEGORIES, SITE_URL } from "@/lib/constants";
+import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -40,8 +40,48 @@ export default async function ArticlesPage({
     return `/articles${qs ? `?${qs}` : ""}`;
   };
 
+  const breadcrumbItems = [
+    { "@type": "ListItem" as const, position: 1, name: "ホーム", item: SITE_URL },
+    ...(currentCategory
+      ? [
+          { "@type": "ListItem" as const, position: 2, name: "記事一覧", item: `${SITE_URL}/articles` },
+          { "@type": "ListItem" as const, position: 3, name: currentCategory.label },
+        ]
+      : [{ "@type": "ListItem" as const, position: 2, name: "記事一覧" }]),
+  ];
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems,
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <nav
+        aria-label="パンくずリスト"
+        className="flex items-center gap-2 text-sm text-gray-500 mb-4"
+      >
+        <Link href="/" className="hover:text-white transition-colors">
+          ホーム
+        </Link>
+        <span aria-hidden="true">/</span>
+        {currentCategory ? (
+          <>
+            <Link href="/articles" className="hover:text-white transition-colors">
+              記事一覧
+            </Link>
+            <span aria-hidden="true">/</span>
+            <span className="text-gray-600">{currentCategory.label}</span>
+          </>
+        ) : (
+          <span className="text-gray-600">記事一覧</span>
+        )}
+      </nav>
       <h1 className="text-2xl font-bold mb-6">
         {currentCategory ? `${currentCategory.label}の記事` : "記事一覧"}
       </h1>
