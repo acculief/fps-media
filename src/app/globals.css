@@ -94,6 +94,10 @@ body {
   line-height: 1.8;
 }
 
+.article-content li::marker {
+  color: #6b7280;
+}
+
 .article-content a {
   color: #93c5fd;
   text-decoration: underline;

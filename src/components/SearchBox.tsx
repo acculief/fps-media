@@ -74,6 +74,17 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
     );
   }, [query, articles]);
 
+  const popularTags = useMemo(() => {
+    const tagCount = new Map<string, number>();
+    articles.forEach((a) =>
+      a.tags.forEach((t) => tagCount.set(t, (tagCount.get(t) ?? 0) + 1))
+    );
+    return [...tagCount.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12)
+      .map(([tag]) => tag);
+  }, [articles]);
+
   return (
     <div>
       <div className="relative mb-8">
@@ -160,8 +171,24 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
       )}
 
       {!query.trim() && (
-        <div className="text-center text-gray-600 py-12">
-          キーワードを入力すると記事を検索できます
+        <div className="py-8">
+          <h2 className="text-sm font-bold text-gray-400 mb-4">
+            人気のキーワード
+          </h2>
+          <div className="flex flex-wrap gap-2 mb-8">
+            {popularTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setQuery(tag)}
+                className="bg-gray-800 border border-gray-700 px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:bg-gray-700 hover:text-white hover:border-gray-600 transition-colors"
+              >
+                #{tag}
+              </button>
+            ))}
+          </div>
+          <p className="text-center text-gray-600 text-sm">
+            キーワードを入力するか、タグをクリックして検索
+          </p>
         </div>
       )}
     </div>

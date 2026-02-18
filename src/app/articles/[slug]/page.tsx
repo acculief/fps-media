@@ -9,6 +9,7 @@ import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ShareButtons } from "@/components/ShareButtons";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
+import { TocNav } from "@/components/TocNav";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -206,29 +207,7 @@ export default async function ArticlePage({
         )}
 
         {/* Table of Contents */}
-        {article.toc.length >= 3 && (
-          <nav
-            aria-label="目次"
-            className="bg-gray-900 border border-gray-800 rounded-lg p-5 mb-10"
-          >
-            <h2 className="text-sm font-bold text-gray-300 mb-3">目次</h2>
-            <ol className="space-y-1.5">
-              {article.toc.map((item) => (
-                <li
-                  key={item.id}
-                  className={item.level === 3 ? "ml-4" : ""}
-                >
-                  <a
-                    href={`#${item.id}`}
-                    className="text-sm text-gray-400 hover:text-white transition-colors leading-relaxed"
-                  >
-                    {item.text}
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </nav>
-        )}
+        {article.toc.length >= 3 && <TocNav items={article.toc} />}
 
         <div
           className="article-content"
