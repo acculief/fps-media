@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.2.6環境の最強キャラクタ�
 category: "character"
 tags: ["Tier表", "最強", "ランキング", "Ver.2.6"]
 date: "2026-02-16"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/10/zzz-tier-list.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944"
 ---
 
 Ver.2.6環境における**全S級エージェントのTierランキング**を、式輿防衛戦や致命急襲での実戦評価をもとに作成した。
@@ -32,6 +32,18 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 | **ホシミ・ミヤビ** | 氷 | 異常 | 氷異常の最強アタッカー。広範囲に安定した火力 |
 | **千夏** | 物理 | サポート | ATKバフが圧倒的。どのパーティにも入る万能サポート |
 
+![葉舜光 - Ver.2.6環境最強のDPSエージェント](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+![ホシミ・ミヤビ - 氷異常の最強アタッカー](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b2/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250106042755)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+![千夏（Sunna） - 最強サポートエージェント](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ---
 
 ## Tier S（トップクラス）
@@ -47,6 +59,14 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 | **アストラ・ヤオ** | エーテル | サポート | 汎用性の高いサポート。千夏に次ぐ評価 |
 | **シーザー・キング** | 物理 | 防御 | 最強の防御エージェント。シールドとバフを両立 |
 | **バーニス** | 炎 | 異常 | 炎異常の女王。スリップダメージが凄い |
+
+![エレン・ジョー - 氷属性メインDPS](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3e/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083041)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+![ジェーン・ドゥ - 物理異常の最適解](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b1/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240816041218)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 

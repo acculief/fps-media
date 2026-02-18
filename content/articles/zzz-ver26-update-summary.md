@@ -4,18 +4,26 @@ description: "ゼンレスゾーンゼロ Ver.2.6の全容を総まとめ。新�
 category: "news"
 tags: ["Ver.2.6", "アップデート", "妄想エンジェル", "千夏"]
 date: "2026-02-06"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/01/21/zzz-2.6-kv.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest?cb=20260205164014"
 ---
 
 HoYoverseは2026年2月6日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.6「いつかの妄想に、アンコール」**を配信開始した。
 
 待望の**妄想エンジェル**（地下アイドルファクション）が本格始動し、新エージェント2名をはじめ、多数の新コンテンツが追加されている。本記事では主要な追加要素をまとめてお届けする。
 
+![Ver.2.6「いつかの妄想に、アンコール」キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest/scale-to-width-down/1200?cb=20260205164014)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ---
 
 ## 新エージェント「千夏（Sunna）」──物理属性・サポートのS級エージェント
 
 Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの作曲担当を務めるS級サポートエージェント。
+
+![千夏（Sunna）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 千夏の性能の要点は以下のとおり。
 
@@ -24,7 +32,17 @@ Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの
 - **相棒「バブルガム」**: EXスキルで召喚される猫型コンパニオン。敵に**「猫の視線」**デバフを付与し、攻撃属性・異常属性のエージェントが連続攻撃するとデバフが起爆してダメージ
 - **爪研ぎリソース**: エーテルヴェール展開時や味方が属性異常を付与するたびにスタック獲得。「猫の視線」が切れると自動で再付与
 
+![千夏の戦闘中イメージ](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/94/Agent_Sunna_In-Game.png/revision/latest/scale-to-width-down/1000?cb=20260206194508)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 千夏はVer.2.5で実装された**葉舜光**との相性が極めて良好。エーテルヴェール関連のシナジーが強力で、メタの中心になりうるサポートエージェントだ。
+
+モチーフW-エンジンは**「ソートバップ」**。
+
+![W-エンジン「ソートバップ」](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/14/W-Engine_Thoughtbop.png/revision/latest/scale-to-width-down/400?cb=20260206221615)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -32,11 +50,45 @@ Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの
 
 Ver.2.6後半（3月4日〜）に実装される**アリア**は、妄想エンジェルのメインボーカルを務めるS級異常エージェント。
 
+![アリア（Aria）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0b/Agent_Aria_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260102062809)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 - **属性/専門**: エーテル・異常
 - **チャージ攻撃特化**: EXスキルで**「ファンダムパワー」**（ペンライト型リソース）を生成し、チャージ攻撃を強化
 - **アルティメット「強化状態」**: エーテルヴェールを展開し、連続フルチャージ攻撃が可能に。ファンダムパワーの蓄積量に応じてダメージ増加
 - **花開き効果**: すでに属性異常状態の敵にフルチャージ攻撃を当てると、異常熟練度に基づく追加ダメージが発生
 - **2つの街歩きフォーム**: 自由に切り替え可能な2種類のシティスタイル
+
+アリアはヒューマンフォームとロボットフォームの2つの姿を持つユニークなキャラクターだ。
+
+![アリアのヒューマンフォーム](https://static.wikia.nocookie.net/zenless-zone-zero/images/f/ff/Agent_Aria_Human_Portrait.png/revision/latest/scale-to-width-down/600?cb=20260206215945)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+モチーフW-エンジンは**「エンジェル・イン・ザ・シェル」**。
+
+![W-エンジン「エンジェル・イン・ザ・シェル」](https://static.wikia.nocookie.net/zenless-zone-zero/images/6/67/W-Engine_Angel_in_the_Shell.png/revision/latest/scale-to-width-down/400?cb=20260207034100)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+---
+
+## 妄想エンジェルとは
+
+![妄想エンジェルのグループ紹介ビジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+**妄想エンジェル（Angels of Delusion）**は、新エリドゥの「404 Error Livehouse」を拠点に活動する地下アイドルグループ。ファンは**「デルルズ」**と呼ばれている。
+
+メンバー構成は以下のとおり。
+
+| メンバー | 担当 | 実装時期 |
+|---|---|---|
+| **千夏（Sunna）** | 作曲 | Ver.2.6前半 |
+| **アリア（Aria）** | メインボーカル | Ver.2.6後半 |
+| **南宮雨（Nangong Yu）** | リーダー・リードダンサー | Ver.2.7（予定） |
 
 ---
 
@@ -49,7 +101,7 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**では、プレ
 - **リズムゲーム**: 音楽コンペティションでのリズムゲームパート
 - **マルセル冒険モード拡張**: 新マップを探索するミニゲーム
 
-イベントを完走すると、**潘隠虎（パン・インフー）**の無料衣装**「美食の宝玉」**（料理人時代のシェフ服）が入手できる。
+イベントを完走すると、**潘隠虎（パン・インフー）**の無料衣装**「美食の宝玉」**が入手できる。
 
 ---
 
@@ -58,8 +110,8 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**では、プレ
 ローグライク型エンドコンテンツ「零号ホロウ」に、新モード**「作戦行列」**が追加された。
 
 - **ウィークリーローテーション**: 毎週テーマが切り替わるステージ
-- **補助エージェント**: 通常の3人編成に加え、4人目の**補助エージェント**を設定可能。戦闘には直接参加しないが、ホロウ探索中に召喚して特殊効果を発動できる
-- **バッテリー消費なし**: 周回にスタミナ不要。報酬は毎週リセット
+- **補助エージェント**: 4人目の補助エージェントを設定可能。探索中に召喚して特殊効果を発動
+- **バッテリー消費なし**: スタミナ不要で何度でも挑戦可能
 
 ---
 
@@ -81,6 +133,16 @@ Ver.2.6では多数の利便性改善が行われた。
 | **HDD進捗表示** | コンプリート率がインターフェースに表示 |
 | **カメラ機能拡張** | フィルター・フレーム・ステッカー追加 |
 | **iOSシェーダー最適化** | カクつき・スタッター軽減 |
+
+---
+
+## 新バングブー「ビッゲストファン」
+
+![S級バングブー「ビッゲストファン」](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+エーテル属性のS級バングブー**「ビッゲストファン」**が追加。妄想エンジェルパーティとの相性が良い。
 
 ---
 

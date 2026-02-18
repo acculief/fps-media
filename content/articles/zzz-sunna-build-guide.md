@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.2.6で実装されたS級サポー
 category: "character"
 tags: ["千夏", "Sunna", "ビルド", "サポート"]
 date: "2026-02-08"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/06/zzz-sunna-card.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest?cb=20260207011806"
 ---
 
 Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**は、エーテルヴェールを活用した攻撃力バフが強力なキャラクター。適切なビルドを組めば、チーム全体の火力を大幅に引き上げることができる。
@@ -15,6 +15,10 @@ Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**
 
 ## 千夏の基本性能おさらい
 
+![千夏（Sunna）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 | 項目 | 詳細 |
 |---|---|
 | **レアリティ** | S級 |
@@ -24,6 +28,10 @@ Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**
 | **キーステータス** | 攻撃力（ATK 3,500が目標ライン） |
 
 千夏のバフ量は**初期ATKに依存**する。ATK3,500に到達すると、エーテルヴェール中のATKバフが最大値（1,050）に達する。この3,500ラインをビルドで目指すのが最優先事項だ。
+
+![千夏のゲーム内モデル（街中フォーム）](https://static.wikia.nocookie.net/zenless-zone-zero/images/7/77/Agent_Sunna_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260206194603)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -57,11 +65,19 @@ Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**
 
 とにかくATKを盛ることが最重要。3,500ラインを超えたらエネルギー回生にシフトしてアルティメットの回転率を意識しよう。
 
+![千夏の戦闘中モデル](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/94/Agent_Sunna_In-Game.png/revision/latest/scale-to-width-down/1000?cb=20260206194508)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ---
 
 ## おすすめW-エンジン
 
 ### 最適：ソートバップ（Thoughtbop）──千夏のモチーフW-エンジン
+
+![W-エンジン「ソートバップ（Thoughtbop）」](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/14/W-Engine_Thoughtbop.png/revision/latest/scale-to-width-down/400?cb=20260206221615)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 | 項目 | 詳細 |
 |---|---|
@@ -109,13 +125,29 @@ Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**
 
 **葉舜光（メインDPS）+ 千夏（サポート）+ 趙（防御）**
 
+![葉舜光（Ye Shunguang）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 葉舜光のエーテルヴェール運用と千夏のバフが完全にかみ合う現環境最強の組み合わせ。趙が防御面を担保し、安定した立ち回りが可能。
+
+![趙（Zhao）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a6/Agent_Zhao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251230033840)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ### エーテル異常パーティ
 
 **アリア（異常DPS）+ 千夏（サポート）+ 南宮雨（スタン）**
 
+![妄想エンジェル（Angels of Delusion）グループ紹介](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 Ver.2.7で南宮雨が実装されれば完成する、妄想エンジェル統一パーティ。ファクションボーナスも期待できる。
+
+![アリア（Aria）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0b/Agent_Aria_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260102062809)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ### 汎用サポート枠
 

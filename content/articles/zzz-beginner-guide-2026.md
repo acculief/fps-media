@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロをこれから始める初心者向け
 category: "guide"
 tags: ["初心者", "ガイド", "序盤攻略", "2026"]
 date: "2026-02-17"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/01/10/zzz-beginner.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/10/Agent_Anby_Demara_Portrait.png/revision/latest?cb=20240704082958"
 ---
 
 『ゼンレスゾーンゼロ（ゼンゼロ）』は奥が深いアクションRPGだが、序盤の進め方を間違えると後々の攻略が大幅に遅れてしまう。
@@ -85,6 +85,30 @@ thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/01/10/zzz-begi
 | **パイパー** | A級 | 異常 | 物理異常DPSとしてS級に匹敵する性能 |
 | **趙** | S級 | 防御 | ストーリー/イベントで無料入手。防御の要 |
 | **ビリー** | A級 | 攻撃 | 初期配布のDPS。序盤の繋ぎに |
+
+### アンビー──序盤最強のスタン役
+
+![アンビー（Anby Demara）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/10/Agent_Anby_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704082958)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+アンビーは初期配布のA級エージェントでありながら、電気属性のスタン役として長期間活躍できる。敵のスタンゲージを高速で蓄積し、チェインアタックのチャンスを作る要。序盤の育成優先度はメインDPSに次いで高い。
+
+### ニコル──防御デバフの鬼
+
+![ニコル（Nicole Demara）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3a/Agent_Nicole_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083102)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+ニコルもまた初期配布のA級エージェント。エーテル属性のサポーターとして、敵の防御力を大幅にダウンさせるデバフスキルが強力。DPSの火力を底上げしてくれるため、どんなパーティにも編成しやすい万能キャラだ。
+
+### パイパー──A級とは思えない異常火力
+
+![パイパー（Piper）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/36/Agent_Piper_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240816041255)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+パイパーはA級ながら、物理異常DPSとしてS級キャラに匹敵する火力を発揮する。回転攻撃で広範囲の敵を巻き込みつつ異常ダメージを蓄積させる戦闘スタイルは爽快感抜群。低コストで育成できるのも魅力だ。
 
 ---
 

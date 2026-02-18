@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの海外コミュニティで話題の
 category: "leak"
 tags: ["リーク", "海外情報", "Ver.2.7", "Ver.2.8"]
 date: "2026-02-18"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/15/zzz-leak-summary.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/27/Agent_Nangong_Yu_Portrait.png/revision/latest?cb=20260212043019"
 ---
 
 海外のゼンレスゾーンゼロコミュニティ（Reddit、X/Twitter、Bilibili等）で出回っているリーク・噂情報を2026年2月時点でまとめた。
@@ -17,6 +17,10 @@ thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/15/zzz-leak
 
 ### 確定：南宮雨（ナンゴン・ユウ）
 
+![南宮雨（ナンゴン・ユウ）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/27/Agent_Nangong_Yu_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260212043019)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 公式ドリップマーケティングで発表済み（2月12日）。
 
 - **S級 / エーテル / 撃破（スタン）**
@@ -26,6 +30,10 @@ thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/15/zzz-leak
 南宮雨の実装により、妄想エンジェル3名（千夏・アリア・南宮雨）のフルパーティが組めるようになる。ファクションボーナスの内容にも注目だ。
 
 ### 確定：シシア（Cissia）
+
+![シシア（Cissia）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/83/Agent_Cissia_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260213044048)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 公式ドリップマーケティングで発表済み（2月13日）。
 
@@ -61,6 +69,10 @@ thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/15/zzz-leak
 ---
 
 ## 今後のロードマップ予想
+
+![都市治安局（Metropolitan Order Division）のファクションアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Faction_Metropolitan_Order_Division_Icon.png/revision/latest/scale-to-width-down/200?cb=20260213045409)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 海外コミュニティの予想を総合すると、今後のバージョンは以下のような展開が予想されている。
 

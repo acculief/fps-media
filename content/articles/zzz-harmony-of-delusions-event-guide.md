@@ -4,10 +4,14 @@ description: "Ver.2.6メインイベント「妄想のハーモニー」の攻�
 category: "event"
 tags: ["妄想のハーモニー", "イベント", "無料衣装", "Ver.2.6"]
 date: "2026-02-07"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/02/06/zzz-harmony-event.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest?cb=20251226112947"
 ---
 
 Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エンジェルのプロデューサーとしてアイドル活動を支援する大型イベント。複数のミニゲームとストーリーで構成されており、完走報酬として**潘隠虎（パン・インフー）の無料衣装**が入手できる。
+
+![妄想エンジェル（Angels of Delusion）のグループビジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -28,6 +32,10 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エ
 
 妄想エンジェルのメンバー（千夏、アリア、南宮雨）の**スキルを育成**するパート。
 
+![スンナ（Sunna）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 - 各メンバーに「ボーカル」「ダンス」「パフォーマンス」の3つのステータスがある
 - トレーニングポイントを消費してステータスを上げる
 - トレーニングポイントは時間経過で回復（またはアイテムで即回復）
@@ -45,6 +53,10 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エ
 ### ステップ3：リズムゲームパート
 
 音楽コンペティションのステージで**リズムゲーム**をプレイ。
+
+![アリア（Aria）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0b/Agent_Aria_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260102062809)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 - ノーツが流れてくるタイミングに合わせてボタンを押す
 - Perfect > Great > Good > Miss の4段階評価

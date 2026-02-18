@@ -1,15 +1,23 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, getAllTags } from "@/lib/articles";
 import { SITE_URL } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
+  const tags = getAllTags();
 
   const articleEntries = articles.map((article) => ({
     url: `${SITE_URL}/articles/${article.slug}`,
     lastModified: new Date(article.date),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+  }));
+
+  const tagEntries = tags.map(({ tag }) => ({
+    url: `${SITE_URL}/tags/${encodeURIComponent(tag)}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
   }));
 
   return [
@@ -25,6 +33,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.9,
     },
+    {
+      url: `${SITE_URL}/tags`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
     ...articleEntries,
+    ...tagEntries,
   ];
 }

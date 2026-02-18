@@ -4,10 +4,14 @@ description: "Ver.2.5で実装された最強アタッカー「葉舜光」の�
 category: "character"
 tags: ["葉舜光", "ビルド", "アタッカー", "最強"]
 date: "2026-02-10"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/01/15/zzz-ye-shunguang-card.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944"
 ---
 
 Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュングァン）**は、現環境で最も高い火力を誇るメインDPS。エーテルヴェール中に敵をスタン扱いにする独自の能力により、ゲームの基本ループを根本から変えた存在だ。
+
+![葉舜光（イェ・シュングァン）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -35,6 +39,10 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 | **キーステータス** | 会心率・会心ダメージ・ATK |
 
 葉舜光は**「開悟」状態**に移行することで青明剣力を蓄積し、連続攻撃で高火力を叩き出す。開悟状態の維持とエーテルヴェールの連携が立ち回りの核となる。
+
+![葉舜光のインゲーム画面](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/18/Agent_Ye_Shunguang_In-Game_City.png/revision/latest/scale-to-width-down/800)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -104,13 +112,29 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 現環境の最強構成。千夏のATKバフ + 葉舜光のヴェール脆弱性 + 趙の防御サポートが完璧にかみ合う。式輿防衛戦のスコアアタックでもトップクラスの編成。
 
+![千夏（Sunna）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
+![趙（Zhao）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a6/Agent_Zhao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251230033840)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ### Tier2：葉舜光 + アストラ・ヤオ + 趙
 
 千夏未所持の場合の代替。アストラ・ヤオのサポート性能も十分に高く、安定した運用が可能。
 
+![アストラ・ヤオのポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5d/Agent_Astra_Yao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250715080944)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ### Tier3：葉舜光 + 千夏 + リナ
 
 攻撃特化の編成。防御面は薄いが、短時間で敵を倒しきれるならこちらが火力は上。上級者向け。
+
+![リナ（Rina）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e2/Agent_Rina_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083122)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 

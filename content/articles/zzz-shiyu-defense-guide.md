@@ -4,12 +4,16 @@ description: "ゼンレスゾーンゼロのエンドコンテンツ「式輿防
 category: "guide"
 tags: ["式輿防衛戦", "攻略", "エンドコンテンツ", "編成"]
 date: "2026-02-12"
-thumbnail: "https://fastcdn.hoyoverse.com/static-resource-v2/2025/01/20/zzz-shiyu-defense.jpg"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/48/Shiyu_Defense.png/revision/latest?cb=20240810120244"
 ---
 
 **式輿防衛戦**はゼンレスゾーンゼロにおける主要なエンドコンテンツ。定期的にステージとバフが更新され、手持ちのエージェントの育成度合いが試される。
 
 本記事では、式輿防衛戦の基本システムから最新ステージの攻略まで、包括的に解説する。
+
+![式輿防衛戦](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/48/Shiyu_Defense.png/revision/latest/scale-to-width-down/600)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 ---
 
@@ -69,11 +73,19 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **葉舜光 + 千夏 + 趙**
 
+![葉舜光](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 現環境最強の物理パーティ。葉舜光のヴェール脆弱性で圧倒的な火力を出せる。
 
 ### 炎フロンティア向け
 
 **バーニス + ライター + ルーシー**
+
+![バーニス](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/83/Agent_Burnice_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240919025126)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 炎異常の蓄積速度が凄まじく、敵を燃やし続けるパーティ。バーニスのスリップダメージが安定的に火力を出す。
 
@@ -81,11 +93,19 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **ホシミ・ミヤビ + アストラ・ヤオ + リナ**
 
+![ホシミ・ミヤビ](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b2/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250106042755)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
+
 ミヤビの氷異常DPSを活かしたパーティ。アストラ・ヤオのサポートで異常蓄積を加速。
 
 ### 電気フロンティア向け
 
 **朱鸢 + チンイー + ニコル**
+
+![朱鸢（Zhu Yuan）](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083147)
+
+<small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 朱鸢のメインDPSとチンイーのスタンで安定した攻略が可能。
 
