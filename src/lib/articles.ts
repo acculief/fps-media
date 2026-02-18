@@ -226,6 +226,21 @@ function rehypeLazyImages() {
   };
 }
 
+function rehypeExternalLinks() {
+  return (tree: Root) => {
+    visit(tree, "element", (node: Element) => {
+      if (node.tagName === "a") {
+        const href = node.properties?.href;
+        if (typeof href === "string" && /^https?:\/\//.test(href)) {
+          node.properties = node.properties || {};
+          node.properties.target = "_blank";
+          node.properties.rel = "noopener nofollow";
+        }
+      }
+    });
+  };
+}
+
 function rehypeScrollableTables() {
   return (tree: Root) => {
     visit(tree, "element", (node: Element, index, parent) => {
@@ -262,6 +277,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
     .use(rehypeRaw)
     .use(rehypeHeadingIds(toc))
     .use(rehypeLazyImages)
+    .use(rehypeExternalLinks)
     .use(rehypeScrollableTables)
     .use(rehypeStringify)
     .process(content);
