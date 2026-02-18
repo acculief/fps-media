@@ -23,15 +23,19 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = await getArticle(slug);
   if (!article) return {};
+  const url = `${SITE_URL}/articles/${slug}`;
   return {
     title: article.title,
     description: article.description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
       type: "article",
       publishedTime: article.date,
-      url: `${SITE_URL}/articles/${slug}`,
+      url,
       ...(article.thumbnail ? { images: [{ url: article.thumbnail }] } : {}),
     },
     twitter: {
@@ -68,10 +72,15 @@ export default async function ArticlePage({
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+    },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
     },
+    keywords: article.tags.join(", "),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": articleUrl,
@@ -123,11 +132,14 @@ export default async function ArticlePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <article className="max-w-3xl mx-auto">
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+        <nav
+          aria-label="パンくずリスト"
+          className="flex items-center gap-2 text-sm text-gray-500 mb-4"
+        >
           <a href="/" className="hover:text-yellow-400 transition-colors">
             ホーム
           </a>
-          <span>/</span>
+          <span aria-hidden="true">/</span>
           {category && (
             <>
               <a
@@ -136,7 +148,7 @@ export default async function ArticlePage({
               >
                 {category.label}
               </a>
-              <span>/</span>
+              <span aria-hidden="true">/</span>
             </>
           )}
           <span className="text-gray-600 truncate max-w-xs">
@@ -144,7 +156,7 @@ export default async function ArticlePage({
           </span>
         </nav>
         <h1 className="text-3xl font-bold mt-2 mb-4">{article.title}</h1>
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
+        <div className="flex items-center gap-4 text-sm text-gray-500 mb-8 flex-wrap">
           <time dateTime={article.date}>{article.date}</time>
           <span>約{readingTime}分で読めます</span>
           {article.tags.length > 0 && (
@@ -161,6 +173,32 @@ export default async function ArticlePage({
             </div>
           )}
         </div>
+
+        {/* Table of Contents */}
+        {article.toc.length >= 3 && (
+          <nav
+            aria-label="目次"
+            className="bg-gray-900 border border-gray-800 rounded-lg p-5 mb-10"
+          >
+            <h2 className="text-sm font-bold text-gray-300 mb-3">目次</h2>
+            <ol className="space-y-1.5">
+              {article.toc.map((item) => (
+                <li
+                  key={item.id}
+                  className={item.level === 3 ? "ml-4" : ""}
+                >
+                  <a
+                    href={`#${item.id}`}
+                    className="text-sm text-gray-400 hover:text-yellow-400 transition-colors leading-relaxed"
+                  >
+                    {item.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
         <div
           className="article-content"
           dangerouslySetInnerHTML={{ __html: article.content }}

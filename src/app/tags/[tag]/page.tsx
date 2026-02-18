@@ -1,4 +1,5 @@
 import { getAllTags, getArticlesByTag } from "@/lib/articles";
+import { SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import type { Metadata } from "next";
 
@@ -17,6 +18,9 @@ export async function generateMetadata({
   return {
     title: `「${decoded}」の記事一覧`,
     description: `ゼンゼロ通信の「${decoded}」に関する記事一覧です。`,
+    alternates: {
+      canonical: `${SITE_URL}/tags/${encodeURIComponent(decoded)}`,
+    },
   };
 }
 

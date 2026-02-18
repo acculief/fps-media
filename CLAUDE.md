@@ -131,10 +131,22 @@ Claudeは**プロのPdM/マーケター/エンジニア**として、毎セッ�
 - [x] 404ページのカスタムデザイン
 - [x] タグ一覧ページ（/tags, /tags/[tag]）＋記事タグのリンク化＋sitemap追加
 - [x] RSS/Atomフィード生成（/feed.xml）＋autodiscoveryリンク
-- [ ] サイト内検索（クライアントサイド全文検索）
-- [ ] パフォーマンス改善（画像遅延読み込み、フォント最適化）
-- [ ] PWA対応（manifest.json, service worker）
 - [x] ヘッダーにモバイルメニュー（ハンバーガー）追加
 - [x] フッターの充実（カテゴリリンク、タグ一覧、RSS、著作権表記）
-- [ ] 記事の目次（Table of Contents）自動生成
 - [x] `turbopack.root`警告を解消（next.config.tsに絶対パス設定）
+- [x] 記事の目次（Table of Contents）自動生成（3見出し以上で表示）
+- [x] canonical URL を全ページに設定
+- [x] 画像のlazy loading注入（rehypeカスタムプラグイン）
+- [x] Article schema.org に author/keywords 追加
+- [x] モバイルメニューのリンククリック時に閉じる修正
+- [x] シェアボタン・ページネーションにaria-label追加
+- [x] カテゴリフィルターのモバイルUX改善（横スクロール、選択状態の背景色）
+- [x] キーボードナビゲーション用focus-visible表示
+- [x] captionテキスト(small)のコントラスト改善
+- [x] 見出しのscroll-margin-top追加（目次クリック時のヘッダー重なり防止）
+- [x] スムーズスクロール追加
+- [ ] サイト内検索（クライアントサイド全文検索）
+- [ ] PWA対応（manifest.json, service worker）
+- [ ] 人気記事ランキング（PV連動は不可のため、タグ・カテゴリベースで代替）
+- [ ] 記事の「前の記事」「次の記事」ナビゲーション
+- [ ] テーブルのモバイル横スクロール対応

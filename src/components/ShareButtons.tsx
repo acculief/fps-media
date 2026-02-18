@@ -22,6 +22,7 @@ export function ShareButtons({ url, title }: { url: string; title: string }) {
         href={tweetUrl}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Xで共有する"
         className="inline-flex items-center gap-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 text-sm px-3 py-1.5 rounded-md transition-colors"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -31,6 +32,7 @@ export function ShareButtons({ url, title }: { url: string; title: string }) {
       </a>
       <button
         onClick={copyLink}
+        aria-label="記事のリンクをコピーする"
         className="inline-flex items-center gap-1.5 bg-gray-800 hover:bg-gray-700 text-gray-300 text-sm px-3 py-1.5 rounded-md transition-colors"
       >
         <svg

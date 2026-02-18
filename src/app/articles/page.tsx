@@ -1,11 +1,15 @@
 import { getAllArticles, getArticlesByCategory } from "@/lib/articles";
-import { CATEGORIES } from "@/lib/constants";
+import { CATEGORIES, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
+import type { Metadata } from "next";
 
 const ARTICLES_PER_PAGE = 12;
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "記事一覧",
+  alternates: {
+    canonical: `${SITE_URL}/articles`,
+  },
 };
 
 export default async function ArticlesPage({
@@ -16,7 +20,10 @@ export default async function ArticlesPage({
   const { cat, page } = await searchParams;
   const currentPage = Math.max(1, parseInt(page ?? "1", 10) || 1);
   const allArticles = cat ? getArticlesByCategory(cat) : getAllArticles();
-  const totalPages = Math.max(1, Math.ceil(allArticles.length / ARTICLES_PER_PAGE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(allArticles.length / ARTICLES_PER_PAGE)
+  );
   const safePage = Math.min(currentPage, totalPages);
   const articles = allArticles.slice(
     (safePage - 1) * ARTICLES_PER_PAGE,
@@ -39,12 +46,18 @@ export default async function ArticlesPage({
       </h1>
 
       {/* Category filter */}
-      <div className="flex gap-2 mb-8 flex-wrap">
+      <div
+        className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap md:overflow-visible"
+        role="tablist"
+        aria-label="カテゴリフィルター"
+      >
         <a
           href="/articles"
-          className={`px-3 py-1 rounded-full text-sm border transition-colors ${
+          role="tab"
+          aria-selected={!cat}
+          className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
             !cat
-              ? "border-yellow-400 text-yellow-400"
+              ? "bg-yellow-400/10 border-yellow-400 text-yellow-400"
               : "border-gray-700 text-gray-400 hover:border-gray-500"
           }`}
         >
@@ -54,9 +67,11 @@ export default async function ArticlesPage({
           <a
             key={c.slug}
             href={`/articles?cat=${c.slug}`}
-            className={`px-3 py-1 rounded-full text-sm border transition-colors ${
+            role="tab"
+            aria-selected={cat === c.slug}
+            className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
               cat === c.slug
-                ? "border-yellow-400 text-yellow-400"
+                ? "bg-yellow-400/10 border-yellow-400 text-yellow-400"
                 : "border-gray-700 text-gray-400 hover:border-gray-500"
             }`}
           >
@@ -79,45 +94,59 @@ export default async function ArticlesPage({
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <nav className="flex items-center justify-center gap-2 mt-12">
+        <nav
+          aria-label="ページネーション"
+          className="flex items-center justify-center gap-2 mt-12"
+        >
           {safePage > 1 ? (
             <a
               href={buildUrl(safePage - 1)}
+              aria-label="前のページへ"
               className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-yellow-400/50 transition-colors"
             >
               前のページ
             </a>
           ) : (
-            <span className="px-4 py-2 border border-gray-800 rounded-lg text-sm text-gray-700">
+            <span
+              aria-hidden="true"
+              className="px-4 py-2 border border-gray-800 rounded-lg text-sm text-gray-700"
+            >
               前のページ
             </span>
           )}
 
-          <div className="flex items-center gap-1">
+          <ul className="flex items-center gap-1 list-none">
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-              <a
-                key={p}
-                href={buildUrl(p)}
-                className={`w-10 h-10 flex items-center justify-center rounded-lg text-sm transition-colors ${
-                  p === safePage
-                    ? "bg-yellow-400 text-gray-900 font-bold"
-                    : "border border-gray-700 hover:border-yellow-400/50"
-                }`}
-              >
-                {p}
-              </a>
+              <li key={p}>
+                <a
+                  href={buildUrl(p)}
+                  aria-label={`${p}ページ目`}
+                  aria-current={p === safePage ? "page" : undefined}
+                  className={`w-10 h-10 flex items-center justify-center rounded-lg text-sm transition-colors ${
+                    p === safePage
+                      ? "bg-yellow-400 text-gray-900 font-bold"
+                      : "border border-gray-700 hover:border-yellow-400/50"
+                  }`}
+                >
+                  {p}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
 
           {safePage < totalPages ? (
             <a
               href={buildUrl(safePage + 1)}
+              aria-label="次のページへ"
               className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-yellow-400/50 transition-colors"
             >
               次のページ
             </a>
           ) : (
-            <span className="px-4 py-2 border border-gray-800 rounded-lg text-sm text-gray-700">
+            <span
+              aria-hidden="true"
+              className="px-4 py-2 border border-gray-800 rounded-lg text-sm text-gray-700"
+            >
               次のページ
             </span>
           )}

@@ -111,6 +111,7 @@ export function Header() {
               <a
                 key={cat.slug}
                 href={`/articles?cat=${cat.slug}`}
+                onClick={() => setOpen(false)}
                 className="py-2.5 px-3 rounded-lg text-sm hover:bg-gray-900 hover:text-yellow-400 transition-colors"
               >
                 {cat.label}
@@ -119,6 +120,7 @@ export function Header() {
             <div className="border-t border-gray-800 mt-1 pt-2">
               <a
                 href="/tags"
+                onClick={() => setOpen(false)}
                 className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-yellow-400 transition-colors block"
               >
                 タグ一覧

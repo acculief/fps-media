@@ -36,6 +36,7 @@ body {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #1f2937;
+  scroll-margin-top: 5rem;
 }
 
 .article-content h3 {
@@ -43,6 +44,7 @@ body {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  scroll-margin-top: 5rem;
 }
 
 .article-content p {
@@ -88,7 +90,7 @@ body {
 
 .article-content small {
   display: block;
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 0.75rem;
   margin-bottom: 1.5rem;
 }
@@ -105,4 +107,26 @@ body {
   margin: 1rem 0;
   color: #9ca3af;
   font-style: italic;
+}
+
+/* Focus visible for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Smooth scroll for ToC anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile horizontal scroll for filter pills */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
