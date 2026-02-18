@@ -1,4 +1,4 @@
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, getPopularArticles } from "@/lib/articles";
 import { SITE_NAME, SITE_DESCRIPTION, CATEGORIES } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Image from "next/image";
@@ -7,6 +7,7 @@ export default function Home() {
   const articles = getAllArticles();
   const [hero, ...rest] = articles;
   const latestArticles = rest.slice(0, 4);
+  const popularArticles = getPopularArticles(5);
 
   const categoryArticles = CATEGORIES.map((cat) => ({
     ...cat,
@@ -51,37 +52,12 @@ export default function Home() {
                   <svg
                     width="64"
                     height="64"
-                    viewBox="0 0 28 28"
+                    viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <rect
-                      x="2"
-                      y="4"
-                      width="24"
-                      height="17"
-                      rx="2"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    />
-                    <line
-                      x1="10"
-                      y1="24"
-                      x2="18"
-                      y2="24"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                    />
-                    <line
-                      x1="14"
-                      y1="21"
-                      x2="14"
-                      y2="24"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    />
-                    <circle cx="14" cy="12" r="3" fill="currentColor" />
+                    <rect x="1" y="1" width="30" height="30" rx="6" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M8 9h16l-12 14h16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
               )}
@@ -140,6 +116,42 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Popular Articles */}
+      {popularArticles.length > 0 && (
+        <section className="mb-16">
+          <h2 className="text-xl font-bold text-white mb-6">注目記事</h2>
+          <div className="bg-gray-900/60 border border-gray-800 rounded-lg divide-y divide-gray-800">
+            {popularArticles.map((article, i) => {
+              const cat = CATEGORIES.find((c) => c.slug === article.category);
+              return (
+                <a
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  className="flex items-center gap-4 p-4 hover:bg-gray-800/50 transition-colors group"
+                >
+                  <span className="text-2xl font-bold text-gray-600 w-8 text-center shrink-0">
+                    {i + 1}
+                  </span>
+                  <div className="min-w-0">
+                    {cat && (
+                      <span className={`text-xs font-medium ${cat.color}`}>
+                        {cat.label}
+                      </span>
+                    )}
+                    <h3 className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors line-clamp-1 mt-0.5">
+                      {article.title}
+                    </h3>
+                  </div>
+                  <time className="text-xs text-gray-600 shrink-0 ml-auto">
+                    {article.date}
+                  </time>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Category Sections */}
       {categoryArticles.map((cat) => (

@@ -107,6 +107,25 @@ export function getAdjacentArticles(slug: string): {
   };
 }
 
+export function getPopularArticles(limit = 5): ArticleMeta[] {
+  const all = getAllArticles();
+  const scored = all.map((a) => {
+    let score = 0;
+    // Evergreen content ranks higher
+    if (a.category === "guide") score += 3;
+    if (a.category === "character") score += 3;
+    // Newer articles get a boost
+    const daysSince = (Date.now() - new Date(a.date).getTime()) / (1000 * 60 * 60 * 24);
+    if (daysSince < 14) score += 2;
+    else if (daysSince < 30) score += 1;
+    // Articles with more tags tend to be comprehensive
+    score += Math.min(a.tags.length, 3);
+    return { article: a, score };
+  });
+  scored.sort((a, b) => b.score - a.score || (b.article.date > a.article.date ? 1 : -1));
+  return scored.slice(0, limit).map((s) => s.article);
+}
+
 export function getAllTags(): { tag: string; count: number }[] {
   const articles = getAllArticles();
   const tagMap = new Map<string, number>();
