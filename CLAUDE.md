@@ -153,5 +153,16 @@ Claudeは**プロのPdM/マーケター/エンジニア**として、毎セッ�
 - [x] ArticleCardに「NEW」バッジ（7日以内の記事に表示）
 - [x] 人気記事ランキング（PV連動は不可のため、タグ・カテゴリベースで代替）
 - [x] 記事のOGP画像自動生成（Vercel OG Image Generation → next/og ImageResponse）
-- [ ] PWA対応（manifest.json, service worker）
+- [x] PWA対応（manifest.json, dynamic icon/apple-icon, appleWebApp meta）
 - [ ] ダークモード/ライトモード切替
+- [x] 記事詳細ページにサムネイルヒーロー画像表示
+- [x] 前後記事ナビゲーションのカードUI改善（矢印アイコン付き）
+- [x] ホームページに統計バー（記事数・カテゴリ数・タグ数）
+- [x] タグクラウド（タグ件数に応じたフォントサイズ変動）
+- [x] 検索のURL同期（?q=パラメータ対応、シェア可能）
+- [x] 検索のESCキー・クリアボタン対応
+- [x] ScrollToTopボタン
+- [x] WebSite schema.org + SearchAction構造化データ
+- [x] サイトマップにカテゴリページURL追加
+- [x] コードブロック・インラインコードのスタイリング
+- [x] 未使用パッケージ（remark-html）の削除
