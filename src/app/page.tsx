@@ -84,15 +84,15 @@ export default function Home() {
 
       {/* Stats Bar */}
       <section className="mb-12 grid grid-cols-3 gap-4">
-        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center hover:border-gray-600 transition-colors">
           <span className="text-2xl font-bold text-yellow-400">{articles.length}</span>
           <span className="text-xs text-gray-500 block mt-1">記事数</span>
         </div>
-        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center hover:border-gray-600 transition-colors">
           <span className="text-2xl font-bold text-yellow-400">{CATEGORIES.length}</span>
           <span className="text-xs text-gray-500 block mt-1">カテゴリ</span>
         </div>
-        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center">
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-4 text-center hover:border-gray-600 transition-colors">
           <span className="text-2xl font-bold text-yellow-400">{tags.length}</span>
           <span className="text-xs text-gray-500 block mt-1">タグ</span>
         </div>
@@ -148,13 +148,14 @@ export default function Home() {
           <div className="bg-gray-900/60 border border-gray-800 rounded-lg divide-y divide-gray-800">
             {popularArticles.map((article, i) => {
               const cat = CATEGORIES.find((c) => c.slug === article.category);
+              const rankColors = ["text-yellow-400", "text-gray-300", "text-amber-600", "text-gray-500", "text-gray-600"];
               return (
                 <Link
                   key={article.slug}
                   href={`/articles/${article.slug}`}
                   className="flex items-center gap-4 p-4 hover:bg-gray-800/50 transition-colors group"
                 >
-                  <span className="text-2xl font-bold text-gray-600 w-8 text-center shrink-0">
+                  <span className={`text-2xl font-bold w-8 text-center shrink-0 ${rankColors[i] ?? "text-gray-600"}`}>
                     {i + 1}
                   </span>
                   <div className="min-w-0">

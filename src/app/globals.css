@@ -35,6 +35,15 @@ body {
   font-weight: 600;
 }
 
+.article-content tr:hover td {
+  background: #111827;
+  transition: background 0.15s ease;
+}
+
+.article-content td {
+  transition: background 0.15s ease;
+}
+
 .article-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -50,6 +59,14 @@ body {
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  scroll-margin-top: 5rem;
+}
+
+.article-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
   scroll-margin-top: 5rem;
 }
 
@@ -113,11 +130,13 @@ body {
 }
 
 .article-content blockquote {
-  border-left: 3px solid #6b7280;
-  padding-left: 1rem;
-  margin: 1rem 0;
-  color: #9ca3af;
+  border-left: 3px solid #facc15;
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  color: #d1d5db;
   font-style: italic;
+  background: #111827;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .article-content pre {

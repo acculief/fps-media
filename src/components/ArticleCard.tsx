@@ -34,6 +34,12 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
             </svg>
           </div>
         )}
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent pointer-events-none" />
+        {category && (
+          <span className={`absolute bottom-2 left-2 text-[10px] font-medium px-1.5 py-0.5 rounded ${category.bg} ${category.border} border ${category.color}`}>
+            {category.label}
+          </span>
+        )}
         {fresh && (
           <span className="absolute top-2 right-2 bg-yellow-400 text-gray-900 text-[10px] font-bold px-1.5 py-0.5 rounded">
             NEW
@@ -41,12 +47,7 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
         )}
       </div>
       <div className="p-4">
-        {category && (
-          <span className={`text-xs font-medium ${category.color}`}>
-            {category.label}
-          </span>
-        )}
-        <h3 className="font-bold mt-1 mb-2 text-gray-100 group-hover:text-white transition-colors line-clamp-2">
+        <h3 className="font-bold mb-2 text-gray-100 group-hover:text-white transition-colors line-clamp-2">
           {article.title}
         </h3>
         <p className="text-sm text-gray-400 line-clamp-2">

@@ -8,6 +8,7 @@ import {
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ShareButtons } from "@/components/ShareButtons";
+import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -131,6 +132,7 @@ export default async function ArticlePage({
 
   return (
     <>
+      <ReadingProgressBar />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
