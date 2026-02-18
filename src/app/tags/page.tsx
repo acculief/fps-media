@@ -13,10 +13,12 @@ export const metadata: Metadata = {
 };
 
 function getTagSize(count: number, maxCount: number): string {
-  const ratio = count / maxCount;
-  if (ratio > 0.7) return "text-lg font-bold";
-  if (ratio > 0.4) return "text-base font-medium";
-  return "text-sm";
+  if (maxCount <= 1) return "text-sm";
+  const ratio = Math.log(count) / Math.log(maxCount);
+  if (ratio > 0.8) return "text-lg font-bold text-white";
+  if (ratio > 0.55) return "text-base font-semibold text-gray-200";
+  if (ratio > 0.3) return "text-sm font-medium text-gray-300";
+  return "text-sm text-gray-400";
 }
 
 export default function TagsPage() {

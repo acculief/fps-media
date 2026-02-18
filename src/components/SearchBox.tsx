@@ -28,11 +28,36 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   );
 }
 
+const RECENT_SEARCHES_KEY = "zzn-recent-searches";
+const MAX_RECENT = 5;
+
+function getRecentSearches(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    return JSON.parse(localStorage.getItem(RECENT_SEARCHES_KEY) ?? "[]");
+  } catch {
+    return [];
+  }
+}
+
+function saveRecentSearch(q: string) {
+  const trimmed = q.trim();
+  if (!trimmed) return;
+  const recent = getRecentSearches().filter((s) => s !== trimmed);
+  recent.unshift(trimmed);
+  localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(recent.slice(0, MAX_RECENT)));
+}
+
+function clearRecentSearches() {
+  localStorage.removeItem(RECENT_SEARCHES_KEY);
+}
+
 export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [query, setQuery] = useState(searchParams.get("q") ?? "");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
 
   const updateUrl = useCallback(
     (q: string) => {
@@ -50,6 +75,10 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
     const timer = setTimeout(() => updateUrl(query), 300);
     return () => clearTimeout(timer);
   }, [query, updateUrl]);
+
+  useEffect(() => {
+    setRecentSearches(getRecentSearches());
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -139,6 +168,7 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
             <Link
               key={article.slug}
               href={`/articles/${article.slug}`}
+              onClick={() => { saveRecentSearch(query.trim()); }}
               className="block bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors"
             >
               <div className="flex items-center gap-2 mb-1">
@@ -172,6 +202,37 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
 
       {!query.trim() && (
         <div className="py-8">
+          {recentSearches.length > 0 && (
+            <div className="mb-8">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="text-sm font-bold text-gray-400">最近の検索</h2>
+                <button
+                  onClick={() => {
+                    clearRecentSearches();
+                    setRecentSearches([]);
+                  }}
+                  className="text-xs text-gray-600 hover:text-gray-400 transition-colors"
+                >
+                  クリア
+                </button>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {recentSearches.map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setQuery(s)}
+                    className="flex items-center gap-1.5 bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:bg-gray-800 hover:text-white hover:border-gray-700 transition-colors"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600">
+                      <polyline points="1 4 1 10 7 10" />
+                      <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                    </svg>
+                    {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           <h2 className="text-sm font-bold text-gray-400 mb-4">
             人気のキーワード
           </h2>
