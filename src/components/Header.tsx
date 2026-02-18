@@ -5,7 +5,7 @@ import { SITE_NAME } from "@/lib/constants";
 
 const CATEGORIES = [
   { slug: "news", label: "ニュース" },
-  { slug: "leak", label: "リーク・海外情報" },
+  { slug: "overseas", label: "海外速報" },
   { slug: "character", label: "キャラクター" },
   { slug: "guide", label: "攻略" },
   { slug: "event", label: "イベント" },
