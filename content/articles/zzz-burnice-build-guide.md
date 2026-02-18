@@ -7,7 +7,7 @@ date: "2026-02-14"
 thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944"
 ---
 
-**バーニス・ホワイト（Burnice White）**はVer.1.2で実装されたS級異常エージェント。カリュドンの息子たちに所属し、炎属性の継続ダメージ（DOT）で敵を焼き尽くすユニークな戦闘スタイルが特徴。フィールドにいなくても裏からダメージを出せるため、チームの総DPSを大幅に引き上げる。
+**バーニス・ホワイト（Burnice White）**はVer.1.2で実装されたS級異常エージェント。カリュドーンの子に所属し、炎属性の継続ダメージ（DOT）で敵を焼き尽くすユニークな戦闘スタイルが特徴。フィールドにいなくても裏からダメージを出せるため、チームの総DPSを大幅に引き上げる。
 
 ---
 
@@ -18,7 +18,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agen
 | **レアリティ** | S級 |
 | **属性** | 炎 |
 | **専門** | 異常（アノマリー） |
-| **所属** | カリュドンの息子たち |
+| **所属** | カリュドーンの子 |
 | **武器タイプ** | 火炎放射器 |
 | **実装バージョン** | Ver.1.2 |
 

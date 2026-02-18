@@ -1,5 +1,5 @@
 ---
-title: "『ゼンゼロ』Ver.2.7の新エージェント判明──妄想エンジェルのリーダー「南宮雨」＆新ファクション「都市治安局」の「シシア」"
+title: "『ゼンゼロ』Ver.2.7の新エージェント判明──妄想エンジェルのリーダー「南宮雨」＆新ファクション「新エリー都治安局」の「シシア」"
 description: "ゼンレスゾーンゼロ Ver.2.7の事前告知（ドリップマーケティング）で新エージェント2名が公開。妄想エンジェルのリーダー南宮雨と、新ファクション所属のシシアの情報をまとめる。"
 category: "news"
 tags: ["Ver.2.7", "南宮雨", "シシア", "ドリップマーケティング"]
@@ -47,7 +47,7 @@ Ver.2.7前半ガチャでの実装が濃厚。
 
 ---
 
-## シシア（Cissia）──新ファクション「都市治安局」初のエージェント
+## シシア（Cissia）──新ファクション「新エリー都治安局」初のエージェント
 
 ![シシアのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/83/Agent_Cissia_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260213044048)
 
@@ -61,19 +61,19 @@ Ver.2.7前半ガチャでの実装が濃厚。
 | **レアリティ** | S級 |
 | **属性** | 電気 |
 | **専門** | 攻撃（アタック） |
-| **所属** | 都市治安局（N.E.P.S.管轄） |
+| **所属** | 新エリー都治安局（N.E.P.S.管轄） |
 
-シシアは**新ファクション「都市治安局」**に所属する初のプレイアブルエージェント。三叉槍を武器とするスネーク・スィリアンで、Ver.2.6のストーリーではファエトン兄妹を支援する形で登場している。
+シシアは**新ファクション「新エリー都治安局」**に所属する初のプレイアブルエージェント。三叉槍を武器とするスネーク・スィリアンで、Ver.2.6のストーリーではファエトン兄妹を支援する形で登場している。
 
 ![シシアのシティフォーム](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/de/Agent_Cissia_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260206091044)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-公式の紹介文では「不思議で怪しげな人物」「N.E.P.S.（新エリドゥ公安局）に半ば強制的に仕えている」と描写されており、何らかの事情を抱えたキャラクターのようだ。
+公式の紹介文では「不思議で怪しげな人物」「N.E.P.S.（新エリー都公安局）に半ば強制的に仕えている」と描写されており、何らかの事情を抱えたキャラクターのようだ。
 
-![都市治安局のファクションアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Faction_Metropolitan_Order_Division_Icon.png/revision/latest/scale-to-width-down/200?cb=20260213045409)
+![新エリー都治安局のファクションアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Faction_Metropolitan_Order_Division_Icon.png/revision/latest/scale-to-width-down/200?cb=20260213045409)
 
-<small>※都市治安局ファクションアイコン。画像は公式より引用</small>
+<small>※新エリー都治安局ファクションアイコン。画像は公式より引用</small>
 
 ### 性能予想
 
