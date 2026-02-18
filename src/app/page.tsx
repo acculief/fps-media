@@ -1,5 +1,5 @@
 import { getAllArticles, getPopularArticles, getAllTags } from "@/lib/articles";
-import { SITE_NAME, SITE_DESCRIPTION, CATEGORIES } from "@/lib/constants";
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, CATEGORIES } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +7,24 @@ import Link from "next/link";
 export default function Home() {
   const articles = getAllArticles();
   const tags = getAllTags();
+
+  const collectionLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: articles.length,
+      itemListElement: articles.slice(0, 10).map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${SITE_URL}/articles/${a.slug}`,
+        name: a.title,
+      })),
+    },
+  };
   const [hero, ...rest] = articles;
   const latestArticles = rest.slice(0, 4);
   const popularArticles = getPopularArticles(5);
@@ -22,6 +40,10 @@ export default function Home() {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }}
+      />
       {/* Hero */}
       <section className="text-center py-12 mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">

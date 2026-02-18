@@ -75,7 +75,7 @@ export default function RootLayout({
           }}
         />
         <Header />
-        <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
+        <main id="main-content" className="max-w-5xl mx-auto px-4 py-8">{children}</main>
         <ScrollToTop />
         <Footer />
       </body>

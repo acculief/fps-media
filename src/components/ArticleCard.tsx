@@ -8,6 +8,18 @@ function isNew(dateStr: string): boolean {
   return diff < 7 * 24 * 60 * 60 * 1000;
 }
 
+function relativeDate(dateStr: string): string {
+  const days = Math.floor(
+    (Date.now() - new Date(dateStr).getTime()) / (1000 * 60 * 60 * 24)
+  );
+  if (days === 0) return "今日";
+  if (days === 1) return "昨日";
+  if (days < 7) return `${days}日前`;
+  if (days < 30) return `${Math.floor(days / 7)}週間前`;
+  if (days < 365) return `${Math.floor(days / 30)}ヶ月前`;
+  return `${Math.floor(days / 365)}年前`;
+}
+
 export function ArticleCard({ article }: { article: ArticleMeta }) {
   const category = CATEGORIES.find((c) => c.slug === article.category);
   const fresh = isNew(article.date);
@@ -54,8 +66,8 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
           {article.description}
         </p>
         <div className="flex items-center gap-3 text-xs text-gray-500 mt-3">
-          <time>{article.date}</time>
-          <span>約{article.readingTime}分</span>
+          <time dateTime={article.date} title={article.date}>{relativeDate(article.date)}</time>
+          <span aria-label={`読了時間約${article.readingTime}分`}>約{article.readingTime}分</span>
         </div>
       </div>
     </Link>

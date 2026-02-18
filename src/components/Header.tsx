@@ -29,6 +29,13 @@ export function Header() {
   }, [router]);
 
   return (
+    <>
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[999] focus:bg-yellow-400 focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold"
+    >
+      メインコンテンツへスキップ
+    </a>
     <header className="border-b border-gray-800/80 bg-gray-950/90 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link
@@ -148,5 +155,6 @@ export function Header() {
         </nav>
       )}
     </header>
+    </>
   );
 }

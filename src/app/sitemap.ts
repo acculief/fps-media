@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles, getAllTags } from "@/lib/articles";
+import { getAllArticles, getAllTags, getArticlesByTag } from "@/lib/articles";
 import { SITE_URL, CATEGORIES } from "@/lib/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,12 +13,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const tagEntries = tags.map(({ tag }) => ({
-    url: `${SITE_URL}/tags/${encodeURIComponent(tag)}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.5,
-  }));
+  const tagEntries = tags.map(({ tag }) => {
+    const tagArticles = getArticlesByTag(tag);
+    const latestDate = tagArticles.length > 0
+      ? new Date(tagArticles[0].date)
+      : new Date();
+    return {
+      url: `${SITE_URL}/tags/${encodeURIComponent(tag)}`,
+      lastModified: latestDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    };
+  });
 
   const categoryEntries = CATEGORIES.map((cat) => ({
     url: `${SITE_URL}/articles?cat=${cat.slug}`,
