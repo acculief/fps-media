@@ -1,12 +1,14 @@
-# FPS Navi - プロジェクトナレッジ
+# ゼンゼロ通信 - プロジェクトナレッジ
 
 ## プロジェクト概要
-- **サイト名**: FPS Navi
-- **URL**: https://fps-navi.vercel.app
+- **サイト名**: ゼンゼロ通信
+- **コンセプト**: ゼンレスゾーンゼロ（ZZZ）特化の非公式ニュースメディア。公式情報＋海外リーク＋オリジナル編集記事で差別化
+- **競合**: 「ゼンレスゾーンゼロ速報まとめ」（zzzsoku.com）は5chまとめ系。当サイトはオリジナル編集記事で差別化
+- **URL**: https://zenzeronews.vercel.app
 - **技術スタック**: Next.js 16 (App Router) + TypeScript + Tailwind CSS v4
 - **デプロイ先**: Vercel
 - **フォント**: Noto Sans JP
-- **テーマ**: ダーク（背景 #030712、アクセント cyan #06B6D4）
+- **テーマ**: ダーク（背景 #030712、アクセント yellow #FACC15）
 
 ## ディレクトリ構成
 ```
@@ -21,6 +23,7 @@ src/lib/constants.ts    # サイト設定・カテゴリ定義
 ## 記事の作成方法
 - `content/articles/` に `.md` ファイルを置くだけで自動認識される
 - ファイル名がそのまま `slug`（URLパス）になる
+- ファイル名は `zzz-` プレフィックスで統一
 - Markdownの処理パイプライン: `remark` → `remark-gfm` → `remark-rehype` → `rehype-raw` → `rehype-stringify`
 
 ### 記事のフロントマター（必須）
@@ -28,9 +31,9 @@ src/lib/constants.ts    # サイト設定・カテゴリ定義
 ---
 title: "記事タイトル"
 description: "SEO用の説明文"
-category: "title"          # recommend | tips | device | title | pc
+category: "news"           # news | leak | character | guide | event
 tags: ["タグ1", "タグ2"]
-date: "2026-02-16"
+date: "2026-02-18"
 thumbnail: "https://..."   # 任意。画像URL
 ---
 ```
@@ -38,13 +41,13 @@ thumbnail: "https://..."   # 任意。画像URL
 ### カテゴリ一覧
 | slug | label | 用途 |
 |---|---|---|
-| recommend | おすすめ | ゲームのおすすめ記事 |
-| tips | 攻略・上達 | 攻略ガイド、テクニック解説 |
-| device | デバイス | マウス、キーボード等のレビュー |
-| title | タイトル別 | ゲームタイトルごとのニュース・レビュー |
-| pc | PC環境 | PC構成、回線、OS設定など |
+| news | ニュース | 公式発表、アプデ、パッチノート |
+| leak | リーク・海外情報 | 海外リーク、データマイン、先行情報 |
+| character | キャラクター | キャラ評価、ビルド、凸情報 |
+| guide | 攻略 | 式輿防衛戦、零号ホロウ等の攻略 |
+| event | イベント | イベント攻略、報酬まとめ |
 
-## 記事のスタイルガイド（ファミ通風の編集記事）
+## 記事のスタイルガイド
 - 日本語で記述
 - `##` で大見出し、`###` で小見出しを使う
 - テーブル（GFM形式）でスペックや比較情報をまとめる
@@ -52,19 +55,33 @@ thumbnail: "https://..."   # 任意。画像URL
 - `**太字**` で重要ワードを強調
 - 画像は `![alt](url)` で埋め込み、直後に `<small>※画像は公式より引用</small>` を添える
 - 区切り線 `---` でセクションを分割
-- 記事末尾にゲーム/製品の概要セクション（公式サイト、対応プラットフォーム、ジャンル、価格）
-- 最後に `<small>&copy; ...</small>` で著作権表記
+- 記事末尾に `<small>&copy; COGNOSPHERE PTE. LTD. 当サイトはゲームの非公式ファンサイトです。</small>` の著作権表記
+- リーク情報には必ず「※リーク・噂に基づく情報です」の注意書き
 
 ## 画像のリモートパターン（next.config.ts）
 新しい画像ホストを使う場合、`next.config.ts` の `images.remotePatterns` に追加が必要。
 現在許可済み:
-- `static.wikia.nocookie.net`
-- `images.unsplash.com`
+- `static.wikia.nocookie.net` (Fandom Wiki)
+- `images.unsplash.com` (Unsplash)
+- `fastcdn.hoyoverse.com` (HoYoverse公式CDN)
+- `act-webstatic.hoyoverse.com` (HoYoverseイベント)
+- `upload-os-bbs.hoyoverse.com` (HoYoLAB)
 
 ## 過去にハマったポイント
-- **テーブル・太字が表示されない**: `remark-gfm` が必要。素の remark は GFM テーブル記法（パイプテーブル）を処理できない
+- **テーブル・太字が表示されない**: `remark-gfm` が必要。素の remark は GFM テーブル記法を処理できない
 - **アイキャッチが表示されない**: Next.js の `<Image>` コンポーネントは `next.config.ts` で許可されたドメインの画像しか読み込めない。新しい画像ホストを使う場合は `remotePatterns` に追加すること
-- **ArticleCard のサムネイル**: `src/components/ArticleCard.tsx` で `next/image` の `<Image>` を使用。thumbnail が無い記事はSVGのフォールバックアイコンを表示
+- **ArticleCard のサムネイル**: `src/components/ArticleCard.tsx` で `next/image` の `<Image>` を使用。thumbnail が無い記事はSVGのフォールバックアイコン（TVモニターモチーフ）を表示
+
+## ゼンゼロの基本情報（記事作成用）
+- **正式名称**: ゼンレスゾーンゼロ / Zenless Zone Zero
+- **略称**: ゼンゼロ / ZZZ
+- **開発**: HoYoverse (COGNOSPHERE PTE. LTD.)
+- **ジャンル**: アクションRPG
+- **対応**: PC / PS5 / iOS / Android
+- **価格**: 基本プレイ無料
+- **現行バージョン**: Ver.2.6（2026年2月時点）
+- **舞台**: 新エリドゥ（New Eridu）
+- **主要ファクション**: カニンガムヘアーズ、ヴィクトリアハウスキーピング、ベロブルグ重工、カリュドンの息子たち、ホロウ特殊作戦第六課、妄想エンジェル、都市治安局 など
 
 ## Git運用
 - メインブランチ: `main`

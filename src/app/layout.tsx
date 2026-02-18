@@ -52,14 +52,12 @@ function Header() {
   return (
     <header className="border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2 text-2xl font-bold text-cyan-400 tracking-tight">
+        <a href="/" className="flex items-center gap-2 text-2xl font-bold text-yellow-400 tracking-tight">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="14" cy="14" r="13" stroke="currentColor" strokeWidth="2"/>
-            <circle cx="14" cy="14" r="3" fill="currentColor"/>
-            <line x1="14" y1="1" x2="14" y2="7" stroke="currentColor" strokeWidth="2"/>
-            <line x1="14" y1="21" x2="14" y2="27" stroke="currentColor" strokeWidth="2"/>
-            <line x1="1" y1="14" x2="7" y2="14" stroke="currentColor" strokeWidth="2"/>
-            <line x1="21" y1="14" x2="27" y2="14" stroke="currentColor" strokeWidth="2"/>
+            <rect x="2" y="4" width="24" height="17" rx="2" stroke="currentColor" strokeWidth="2"/>
+            <line x1="10" y1="24" x2="18" y2="24" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <line x1="14" y1="21" x2="14" y2="24" stroke="currentColor" strokeWidth="2"/>
+            <circle cx="14" cy="12" r="3" fill="currentColor"/>
           </svg>
           {SITE_NAME}
         </a>
@@ -68,7 +66,7 @@ function Header() {
             <a
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
-              className="hover:text-cyan-400 transition-colors"
+              className="hover:text-yellow-400 transition-colors"
             >
               {cat.label}
             </a>

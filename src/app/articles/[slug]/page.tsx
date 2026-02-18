@@ -67,7 +67,7 @@ export default async function ArticlePage({
         {category && (
           <a
             href={`/articles?cat=${category.slug}`}
-            className="text-sm text-cyan-400 hover:underline"
+            className="text-sm text-yellow-400 hover:underline"
           >
             {category.label}
           </a>

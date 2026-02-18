@@ -27,7 +27,7 @@ export default async function ArticlesPage({
           href="/articles"
           className={`px-3 py-1 rounded-full text-sm border transition-colors ${
             !cat
-              ? "border-cyan-400 text-cyan-400"
+              ? "border-yellow-400 text-yellow-400"
               : "border-gray-700 text-gray-400 hover:border-gray-500"
           }`}
         >
@@ -39,7 +39,7 @@ export default async function ArticlesPage({
             href={`/articles?cat=${c.slug}`}
             className={`px-3 py-1 rounded-full text-sm border transition-colors ${
               cat === c.slug
-                ? "border-cyan-400 text-cyan-400"
+                ? "border-yellow-400 text-yellow-400"
                 : "border-gray-700 text-gray-400 hover:border-gray-500"
             }`}
           >

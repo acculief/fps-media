@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero */}
       <section className="text-center py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          <span className="text-cyan-400">{SITE_NAME}</span>
+          <span className="text-yellow-400">{SITE_NAME}</span>
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
           {SITE_DESCRIPTION}
@@ -25,7 +25,7 @@ export default function Home() {
             <a
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
-              className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-center hover:border-cyan-400 transition-colors"
+              className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-center hover:border-yellow-400 transition-colors"
             >
               <span className="text-sm font-medium">{cat.label}</span>
             </a>
@@ -37,7 +37,7 @@ export default function Home() {
       <section>
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-xl font-bold">最新記事</h2>
-          <a href="/articles" className="text-sm text-cyan-400 hover:underline">
+          <a href="/articles" className="text-sm text-yellow-400 hover:underline">
             すべて見る →
           </a>
         </div>

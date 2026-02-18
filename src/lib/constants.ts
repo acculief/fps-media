@@ -1,12 +1,12 @@
-export const SITE_NAME = "FPS Navi";
+export const SITE_NAME = "ゼンゼロ通信";
 export const SITE_DESCRIPTION =
-  "FPSゲーマーのための総合情報メディア。おすすめタイトル、デバイスレビュー、上達テクニックをお届けします。";
-export const SITE_URL = "https://fps-navi.vercel.app";
+  "『ゼンレスゾーンゼロ（ゼンゼロ）』の最新情報をお届けする非公式ニュースメディア。公式アップデート、海外リーク、キャラ評価、攻略情報をわかりやすくまとめています。";
+export const SITE_URL = "https://zenzeronews.vercel.app";
 
 export const CATEGORIES = [
-  { slug: "recommend", label: "おすすめ" },
-  { slug: "tips", label: "攻略・上達" },
-  { slug: "device", label: "デバイス" },
-  { slug: "title", label: "タイトル別" },
-  { slug: "pc", label: "PC環境" },
+  { slug: "news", label: "ニュース" },
+  { slug: "leak", label: "リーク・海外情報" },
+  { slug: "character", label: "キャラクター" },
+  { slug: "guide", label: "攻略" },
+  { slug: "event", label: "イベント" },
 ] as const;

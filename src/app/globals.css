@@ -70,7 +70,7 @@ body {
 }
 
 .article-content a {
-  color: #22d3ee;
+  color: #facc15;
   text-decoration: underline;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .article-content blockquote {
-  border-left: 3px solid #22d3ee;
+  border-left: 3px solid #facc15;
   padding-left: 1rem;
   margin: 1rem 0;
   color: #9ca3af;

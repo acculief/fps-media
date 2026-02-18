@@ -11,6 +11,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "fastcdn.hoyoverse.com",
+      },
+      {
+        protocol: "https",
+        hostname: "act-webstatic.hoyoverse.com",
+      },
+      {
+        protocol: "https",
+        hostname: "upload-os-bbs.hoyoverse.com",
+      },
     ],
   },
 };
