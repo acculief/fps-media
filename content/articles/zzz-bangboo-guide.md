@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロのバングブー（ボンプ）を完
 category: "guide"
 tags: ["バングブー", "ランキング", "育成", "攻略"]
 date: "2026-02-15"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/05/Bangboo_Plugboo.png/revision/latest?cb=20240704085041"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/INTER-KNOT_Bangboo.png/revision/latest?cb=20220520013707"
 ---
 
 **バングブー（Bangboo）**はゼンレスゾーンゼロの戦闘で4枠目として編成できるサポートユニット。適切なバングブーを選ぶだけで火力が大きく変わるため、編成の要となる存在だ。

@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの宮美（ミヤビ）のおすすめ
 category: "character"
 tags: ["宮美", "ミヤビ", "ビルド", "氷属性", "アタッカー"]
 date: "2026-02-16"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/df/Agent_Miyabi_Portrait.png/revision/latest?cb=20250108020021"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641"
 ---
 
 **宮美（ミヤビ / Miyabi）**はVer.2.0で実装されたS級アタッカー。氷属性の圧倒的な火力と、居合斬りを彷彿とさせるスタイリッシュな戦闘モーションで、実装直後から環境トップに君臨している。

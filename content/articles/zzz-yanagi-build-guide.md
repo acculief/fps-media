@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの蒼角（ヤナギ）のおすすめ
 category: "character"
 tags: ["蒼角", "ヤナギ", "ビルド", "アタッカー"]
 date: "2026-02-13"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/be/Agent_Tsukishiro_Yanagi_Portrait.png/revision/latest?cb=20241023015625"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/c/cb/Agent_Tsukishiro_Yanagi_Portrait.png/revision/latest/scale-to-width-down/1200?cb=20241106030347"
 ---
 
 **蒼角（ヤナギ / Tsukishiro Yanagi）**はVer.1.3で実装されたS級アタッカー。電気＋エーテルの二重属性という唯一無二の特性を持ち、実装から半年以上経った現在もDPSランキングの最上位に君臨し続けている。

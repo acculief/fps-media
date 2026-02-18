@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.2.6のサブイベント「迷い�
 category: "event"
 tags: ["イベント", "Ver.2.6", "迷いの虚隙", "攻略"]
 date: "2026-02-12"
-thumbnail: "https://fastcdn.hoyoverse.com/content-v2/nap/102027/38e3b02e2655f2c8ee8e498f14c166b8_1961816042564498209.png"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest?cb=20260205164014"
 ---
 
 Ver.2.6のサブイベント**「迷いの虚隙」**は、特殊なホロウを探索する戦闘メインのイベント。短期間で効率よくクリアでき、報酬も美味いので忘れずに消化したい。

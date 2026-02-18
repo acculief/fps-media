@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの海外Redditコミュニティ（r/Z
 category: "overseas"
 tags: ["海外", "Reddit", "コミュニティ", "話題"]
 date: "2026-02-11"
-thumbnail: "https://fastcdn.hoyoverse.com/content-v2/nap/102027/38e3b02e2655f2c8ee8e498f14c166b8_1961816042564498209.png"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Splashscreen_Welcome_To_New_Eridu.png/revision/latest?cb=20240628145305"
 ---
 
 ※海外コミュニティ発の情報であり、公式発表とは異なる場合があります
