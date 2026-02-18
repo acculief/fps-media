@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロで毎月もらえるポリクローム
 category: "guide"
 tags: ["ポリクローム", "無課金", "ガチャ", "攻略"]
 date: "2026-02-14"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/4c/Item_Polychrome.png/revision/latest?cb=20240807185318"
+thumbnail: "/images/40aac9b1f6b9.png"
 ---
 
 ゼンレスゾーンゼロのガチャ通貨**ポリクローム**。欲しいエージェントを確保するためには計画的な収集が不可欠だ。

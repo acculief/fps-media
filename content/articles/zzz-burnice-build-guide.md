@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロのバーニス・ホワイトのおす
 category: "character"
 tags: ["バーニス", "ビルド", "炎属性", "異常", "アタッカー"]
 date: "2026-02-14"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944"
+thumbnail: "/images/372f2a7d3754.png"
 ---
 
 **バーニス・ホワイト（Burnice White）**はVer.1.2で実装されたS級異常エージェント。カリュドーンの子に所属し、炎属性の継続ダメージ（DOT）で敵を焼き尽くすユニークな戦闘スタイルが特徴。フィールドにいなくても裏からダメージを出せるため、チームの総DPSを大幅に引き上げる。

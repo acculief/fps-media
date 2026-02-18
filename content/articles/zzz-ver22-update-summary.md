@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.2の全容を解説。新エー�
 category: "news"
 tags: ["Ver.2.2", "アップデート"]
 date: "2025-03-19"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b6/Splashscreen_Among_the_Forgotten_Ruins.png/revision/latest?cb=20250311211944"
+thumbnail: "/images/7c404afafeb7.png"
 ---
 
 HoYoverseは2025年3月19日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.2**を配信開始した。
 
 新エージェントの実装をはじめ、メインストーリーの続編やイベントコンテンツの追加など、多岐にわたるアップデートとなっている。本記事では主要な追加要素をまとめてお届けする。
 
-![ゼンレスゾーンゼロ キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b6/Splashscreen_Among_the_Forgotten_Ruins.png/revision/latest?cb=20250311211944)
+![ゼンレスゾーンゼロ キービジュアル](/images/7c404afafeb7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

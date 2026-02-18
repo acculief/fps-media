@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.1.2「霓灯の夜明け」の全�
 category: "news"
 tags: ["Ver.1.2", "アップデート", "ジェーン・ドゥ", "シーザー・キング"]
 date: "2024-09-25"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/11/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240904165715"
+thumbnail: "/images/d94dda6cf0fd.png"
 ---
 
 HoYoverseは2024年9月25日、『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の**Ver.1.2「霓灯の夜明け」**を配信した。
 
 本バージョンは実装内容の充実度が際立つアップデートとなっており、新S級エージェント2名の同時実装、待望の**外装（コスチューム）システム**の導入、さらに「カリュドーンの子」を中心にした新ストーリーなど、注目要素が目白押しだ。本記事ではその全容を解説する。
 
-![ジェーン・ドゥのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/11/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240904165715)
+![ジェーン・ドゥのキャラクターポートレート](/images/d94dda6cf0fd.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -48,7 +48,7 @@ Ver.1.2前半ガチャで登場する**ジェーン・ドゥ（Jane Doe）**は�
 
 Ver.1.2後半（10月16日〜）に登場する**シーザー・キング（Caesar King）**は、カリュドーンの子のリーダーを務める物理属性のS級ディフェンスエージェント。
 
-![シーザー・キングのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b8/Agent_Caesar_King_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240925031439)
+![シーザー・キングのキャラクターポートレート](/images/13668ae6d78b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

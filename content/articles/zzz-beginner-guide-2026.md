@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロをこれから始める初心者向け
 category: "guide"
 tags: ["初心者", "ガイド", "序盤攻略", "2026"]
 date: "2026-02-17"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agent_Anby_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240706234414"
+thumbnail: "/images/a693ca8dbfb4.png"
 ---
 
 『ゼンレスゾーンゼロ（ゼンゼロ）』は奥が深いアクションRPGだが、序盤の進め方を間違えると後々の攻略が大幅に遅れてしまう。
@@ -88,7 +88,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agen
 
 ### アンビー──序盤最強のスタン役
 
-![アンビー（Anby Demara）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agent_Anby_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240706234414)
+![アンビー（Anby Demara）のポートレート](/images/a693ca8dbfb4.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -96,7 +96,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agen
 
 ### ニコル──防御デバフの鬼
 
-![ニコル（Nicole Demara）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707011646)
+![ニコル（Nicole Demara）のポートレート](/images/0cd6a738b702.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -104,7 +104,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agen
 
 ### パイパー──A級とは思えない異常火力
 
-![パイパー（Piper）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a9/Agent_Piper_Wheel_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707002233)
+![パイパー（Piper）のポートレート](/images/2459edd849ef.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの朱鳶（ジュ・ユアン）のお
 category: "character"
 tags: ["朱鳶", "ジュ・ユアン", "ビルド", "エーテル属性", "アタッカー"]
 date: "2026-02-15"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest?cb=20240708205906"
+thumbnail: "/images/16400811295f.png"
 ---
 
 **朱鳶（ジュ・ユアン / Zhu Yuan）**はVer.1.0のリリース時から実装されているS級アタッカー。対ホロウ六課のエリート捜査官であり、エーテル属性の射撃攻撃で敵を一掃するスタイリッシュなキャラクター。リリース初期から長く愛されている。

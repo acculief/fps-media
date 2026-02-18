@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.1.3の全容を解説。新エー�
 category: "news"
 tags: ["Ver.1.3", "アップデート", "バーニス", "ライター"]
 date: "2024-10-23"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944"
+thumbnail: "/images/372f2a7d3754.png"
 ---
 
 HoYoverseは2024年10月23日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.1.3「虚構の地平線（Virtual Horizon）」**を配信開始した。
@@ -17,7 +17,7 @@ HoYoverseは2024年10月23日、アクションRPG『[ゼンレスゾーンゼ�
 
 Ver.1.3前半ガチャで実装される**バーニス**は、「カリュドンの子ら」に所属するS級異常エージェント。チェーンソー型の武器を振るい、敵に燃焼状態を付与する攻撃的な異常アタッカーだ。
 
-![バーニス（Burnice）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944)
+![バーニス（Burnice）のキャラクターポートレート](/images/372f2a7d3754.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -43,7 +43,7 @@ Ver.1.3前半ガチャで実装される**バーニス**は、「カリュドン
 
 Ver.1.3後半（11月13日〜）に実装される**ライター**は、同じく「カリュドンの子ら」のS級撃破エージェント。格闘家スタイルの近接戦闘を得意とし、敵のブレイクゲージを効率的に削り取る。
 
-![ライター（Lighter）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/dd/Agent_Lighter_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241127183114)
+![ライター（Lighter）のキャラクターポートレート](/images/3b42724dddb1.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

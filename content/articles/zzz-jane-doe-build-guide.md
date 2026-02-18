@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロのジェーン・ドゥのおすすめ
 category: "character"
 tags: ["ジェーン・ドゥ", "ビルド", "物理属性", "異常", "アタッカー"]
 date: "2026-02-16"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/1/11/Agent_Jane_Doe_Portrait.png/revision/latest?cb=20240904165715"
+thumbnail: "/images/88bfa65671eb.png"
 ---
 
 **ジェーン・ドゥ（Jane Doe）**はVer.1.1で実装されたS級異常エージェント。物理属性の侵蝕を高速で蓄積し、侵蝕爆発による圧倒的なダメージを叩き出す。「操作していて楽しい」という評価が非常に高く、グローバルではCN以上に人気のあるキャラクターだ。

@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロのエージェントを役割別（ア
 category: "character"
 tags: ["Tier List", "エージェント", "評価", "役割"]
 date: "2026-02-18"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest?cb=20251226112947"
+thumbnail: "/images/05225169e933.png"
 ---
 
 ゼンレスゾーンゼロでは各エージェントが**アタッカー（攻撃）・サポート（支援）・撃破（ブレイク）・異常（アノマリー）**の4つの役割に分かれている。チーム編成ではこれらの役割をバランスよく組み合わせることが重要だ。

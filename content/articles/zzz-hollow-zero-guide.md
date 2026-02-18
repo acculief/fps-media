@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロのローグライク型コンテンツ
 category: "guide"
 tags: ["零号ホロウ", "攻略", "レゾブレム", "作戦行列"]
 date: "2026-02-09"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Icon_Hollow_Zero.png/revision/latest?cb=20241220084428"
+thumbnail: "/images/faaf4963ad05.png"
 ---
 
 **零号ホロウ**はゼンレスゾーンゼロのローグライク型エンドコンテンツ。ランダムに獲得するバフを組み合わせてダンジョンを攻略していく。
 
 崩壊：スターレイルの「模擬宇宙」に近い構造で、戦略性が高く、やり込み要素も豊富。本記事ではシステムの解説から効率周回まで、零号ホロウのすべてを網羅する。
 
-![零号ホロウのアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Icon_Hollow_Zero.png/revision/latest/scale-to-width-down/400?cb=20241220084428)
+![零号ホロウのアイコン](/images/ac61027f2c20.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -38,7 +38,7 @@ thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7c/Icon
 
 ギアはボンプ（ボンプ）に装着するバフで、パーティ全体の生存力や火力を底上げする重要な要素だ。
 
-![ボンプ「ビッゲストファン」のアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
+![ボンプ「ビッゲストファン」のアイコン](/images/a2fa237feb9c.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

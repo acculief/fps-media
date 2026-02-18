@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの全ボンプを評価・ランキン
 category: "character"
 tags: ["Tier List", "ボンプ", "評価", "編成"]
 date: "2026-02-16"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/INTER-KNOT_Bangboo.png/revision/latest?cb=20220520013707"
+thumbnail: "/images/20232762c906.png"
 ---
 
 ボンプはチームの4枠目として、戦闘中にサポート効果を発揮するパートナー。適切なボンプを選ぶことでチームDPSが大きく変わる。

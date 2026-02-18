@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.6の全容を総まとめ。新�
 category: "news"
 tags: ["Ver.2.6", "アップデート", "妄想エンジェル", "千夏"]
 date: "2026-02-06"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest?cb=20260205164014"
+thumbnail: "/images/b831a760a4cf.png"
 ---
 
 HoYoverseは2026年2月6日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.6「いつかの妄想に、アンコール」**を配信開始した。
 
 待望の**妄想エンジェル**（地下アイドルファクション）が本格始動し、新エージェント2名をはじめ、多数の新コンテンツが追加されている。本記事では主要な追加要素をまとめてお届けする。
 
-![Ver.2.6「いつかの妄想に、アンコール」キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest/scale-to-width-down/1200?cb=20260205164014)
+![Ver.2.6「いつかの妄想に、アンコール」キービジュアル](/images/4a7f8dcd4162.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -21,7 +21,7 @@ HoYoverseは2026年2月6日、アクションRPG『[ゼンレスゾーンゼロ]
 
 Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの作曲担当を務めるS級サポートエージェント。
 
-![千夏（Sunna）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+![千夏（Sunna）のキャラクターポートレート](/images/f8cbb3a7412b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -32,7 +32,7 @@ Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの
 - **相棒「バブルガム」**: EXスキルで召喚される猫型コンパニオン。敵に**「猫の視線」**デバフを付与し、攻撃属性・異常属性のエージェントが連続攻撃するとデバフが起爆してダメージ
 - **爪研ぎリソース**: エーテルヴェール展開時や味方が属性異常を付与するたびにスタック獲得。「猫の視線」が切れると自動で再付与
 
-![千夏の戦闘中イメージ](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/94/Agent_Sunna_In-Game.png/revision/latest/scale-to-width-down/1000?cb=20260206194508)
+![千夏の戦闘中イメージ](/images/86c38650d2f8.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -40,7 +40,7 @@ Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの
 
 モチーフW-エンジンは**「ソートバップ」**。
 
-![W-エンジン「ソートバップ」](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/14/W-Engine_Thoughtbop.png/revision/latest/scale-to-width-down/400?cb=20260206221615)
+![W-エンジン「ソートバップ」](/images/70d28aa383cc.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -50,7 +50,7 @@ Ver.2.6前半ガチャで実装される**千夏**は、妄想エンジェルの
 
 Ver.2.6後半（3月4日〜）に実装される**アリア**は、妄想エンジェルのメインボーカルを務めるS級異常エージェント。
 
-![アリア（Aria）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0b/Agent_Aria_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260102062809)
+![アリア（Aria）のキャラクターポートレート](/images/c278710dfbdd.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -62,13 +62,13 @@ Ver.2.6後半（3月4日〜）に実装される**アリア**は、妄想エン�
 
 アリアはヒューマンフォームとロボットフォームの2つの姿を持つユニークなキャラクターだ。
 
-![アリアのヒューマンフォーム](https://static.wikia.nocookie.net/zenless-zone-zero/images/f/ff/Agent_Aria_Human_Portrait.png/revision/latest/scale-to-width-down/600?cb=20260206215945)
+![アリアのヒューマンフォーム](/images/32e2e9159185.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 モチーフW-エンジンは**「エンジェル・イン・ザ・シェル」**。
 
-![W-エンジン「エンジェル・イン・ザ・シェル」](https://static.wikia.nocookie.net/zenless-zone-zero/images/6/67/W-Engine_Angel_in_the_Shell.png/revision/latest/scale-to-width-down/400?cb=20260207034100)
+![W-エンジン「エンジェル・イン・ザ・シェル」](/images/71a27bb8755b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -76,7 +76,7 @@ Ver.2.6後半（3月4日〜）に実装される**アリア**は、妄想エン�
 
 ## 妄想エンジェルとは
 
-![妄想エンジェルのグループ紹介ビジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+![妄想エンジェルのグループ紹介ビジュアル](/images/002a3ee4cc39.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -138,7 +138,7 @@ Ver.2.6では多数の利便性改善が行われた。
 
 ## 新ボンプ「ビッゲストファン」
 
-![S級ボンプ「ビッゲストファン」](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/25/Bangboo_Biggest_Fan_Icon.png/revision/latest/scale-to-width-down/300?cb=20260206202106)
+![S級ボンプ「ビッゲストファン」](/images/a2fa237feb9c.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

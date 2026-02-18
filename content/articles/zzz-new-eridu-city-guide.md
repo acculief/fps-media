@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの舞台「新エリー都」のマッ
 category: "guide"
 tags: ["新エリー都", "攻略", "マップ", "初心者"]
 date: "2026-02-12"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/26/New_Eridu_Settlers_Guide_-_The_City_Life_-_Cover_Image.png/revision/latest/scale-to-width-down/800?cb=20220605043341"
+thumbnail: "/images/ac01f69f0c88.png"
 ---
 
 新エリー都（New Eridu）はゼンレスゾーンゼロの舞台となる都市。ストーリー進行に伴い解放されるエリアには、様々な施設や隠し要素が存在する。

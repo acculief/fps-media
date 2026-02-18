@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロのエレン・ジョーのおすすめ
 category: "character"
 tags: ["エレン・ジョー", "ビルド", "氷属性", "アタッカー"]
 date: "2026-02-17"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/1200?cb=20241007222138"
+thumbnail: "/images/573a53f2b9df.png"
 ---
 
 **エレン・ジョー（Ellen Joe）**はVer.1.0のリリース時から実装されているS級アタッカー。ヴィクトリア家政に所属するメイド兼シャークで、氷属性の高火力と独特のダッシュ攻撃を持つ。リリース初日から現在に至るまで安定した人気を誇るキャラクターだ。

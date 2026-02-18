@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロのエンドコンテンツ「式輿防
 category: "guide"
 tags: ["式輿防衛戦", "攻略", "エンドコンテンツ", "編成"]
 date: "2026-02-12"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/48/Shiyu_Defense.png/revision/latest?cb=20240810120244"
+thumbnail: "/images/d6801f5c507f.png"
 ---
 
 **式輿防衛戦**はゼンレスゾーンゼロにおける主要なエンドコンテンツ。定期的にステージとバフが更新され、手持ちのエージェントの育成度合いが試される。
 
 本記事では、式輿防衛戦の基本システムから最新ステージの攻略まで、包括的に解説する。
 
-![式輿防衛戦](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/48/Shiyu_Defense.png/revision/latest/scale-to-width-down/600)
+![式輿防衛戦](/images/def262aca6d0.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -73,7 +73,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **葉舜光 + 千夏 + 趙**
 
-![葉舜光](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+![葉舜光](/images/db834ee714d7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -83,7 +83,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **バーニス + ライター + ルーシー**
 
-![バーニス](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944)
+![バーニス](/images/372f2a7d3754.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -93,7 +93,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **ホシミ・ミヤビ + アストラ・ヤオ + リナ**
 
-![ホシミ・ミヤビ](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641)
+![ホシミ・ミヤビ](/images/de937b057c3b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -103,7 +103,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **朱鸢 + チンイー + ニコル**
 
-![朱鸢（Zhu Yuan）](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240708205906)
+![朱鸢（Zhu Yuan）](/images/db5eadfde28c.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

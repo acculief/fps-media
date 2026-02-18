@@ -4,12 +4,12 @@ description: "Ver.2.5で実装された最強アタッカー「葉舜光」の�
 category: "character"
 tags: ["葉舜光", "ビルド", "アタッカー", "最強"]
 date: "2026-02-10"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944"
+thumbnail: "/images/069ffe00cea7.png"
 ---
 
 Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュングァン）**は、現環境で最も高い火力を誇るメインDPS。エーテルヴェール中に敵をスタン扱いにする独自の能力により、ゲームの基本ループを根本から変えた存在だ。
 
-![葉舜光（イェ・シュングァン）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+![葉舜光（イェ・シュングァン）のポートレート](/images/db834ee714d7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -40,7 +40,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 葉舜光は**「開悟」状態**に移行することで青明剣力を蓄積し、連続攻撃で高火力を叩き出す。開悟状態の維持とエーテルヴェールの連携が立ち回りの核となる。
 
-![葉舜光のインゲーム画面](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/91/Agent_Ye_Shunguang_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20251230172434)
+![葉舜光のインゲーム画面](/images/8cb6ea2ee727.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -112,11 +112,11 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 現環境の最強構成。千夏のATKバフ + 葉舜光のヴェール脆弱性 + 趙の防御サポートが完璧にかみ合う。式輿防衛戦のスコアアタックでもトップクラスの編成。
 
-![千夏（Sunna）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+![千夏（Sunna）のポートレート](/images/f8cbb3a7412b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![趙（Zhao）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a6/Agent_Zhao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251230033840)
+![趙（Zhao）のポートレート](/images/f1e441a4f4aa.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -124,7 +124,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 千夏未所持の場合の代替。アストラ・ヤオのサポート性能も十分に高く、安定した運用が可能。
 
-![アストラ・ヤオのポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/44/Agent_Astra_Yao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250122022513)
+![アストラ・ヤオのポートレート](/images/b0af31339dc8.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -132,7 +132,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 攻撃特化の編成。防御面は薄いが、短時間で敵を倒しきれるならこちらが火力は上。上級者向け。
 
-![リナ（Rina）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/40/Agent_Alexandrina_Sebastiane_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707002357)
+![リナ（Rina）のポートレート](/images/a8b3e28f1304.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

@@ -4,7 +4,7 @@ description: "海外コミュニティにおけるVer.2.6のキャラ評価・Ti
 category: "overseas"
 tags: ["海外情報", "キャラ評価", "Ver.2.6", "Tier"]
 date: "2026-02-10"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest?cb=20260205164014"
+thumbnail: "/images/b831a760a4cf.png"
 ---
 
 Ver.2.6環境における海外コミュニティ（Reddit、HoYoLAB Global、YouTube）のキャラ評価事情をまとめた。日本のプレイヤー評価とは異なる視点も多く、参考になるポイントが多い。

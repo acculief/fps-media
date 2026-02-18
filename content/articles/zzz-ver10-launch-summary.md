@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.1.0のグローバル正式リリ�
 category: "news"
 tags: ["Ver.1.0", "リリース", "アップデート"]
 date: "2024-07-04"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Splashscreen_Welcome_To_New_Eridu.png/revision/latest?cb=20240628145305"
+thumbnail: "/images/8d02a413fea2.png"
 ---
 
 HoYoverseは2024年7月4日、新作アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』を**グローバル同時リリース**した。対応プラットフォームはPC / PlayStation 5 / iOS / Android。
 
 本作はHoYoverseが手掛ける都市ファンタジーアクションRPGで、超空洞（ホロウ）と呼ばれる異次元災害が発生する近未来都市「新エリー都」を舞台に、プレイヤーは**プロキシー**（空洞案内人）として冒険を繰り広げる。本記事ではVer.1.0の主要な実装内容を総ざらいする。
 
-![アンビー・デマラのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bd/Agent_Anby_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240706234414)
+![アンビー・デマラのキャラクターポートレート](/images/a693ca8dbfb4.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -39,7 +39,7 @@ Ver.1.0ではスターターキャラクター3名を含む、計**14名のエ�
 | **ニコル・デマラ** | A級 | エーテル | サポート | カニンガム・グループ |
 | **ビリー・キッド** | A級 | 物理 | アタック | カニンガム・グループ |
 
-![ニコル・デマラのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/7/7a/Agent_Nicole_Demara_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707011646)
+![ニコル・デマラのキャラクターポートレート](/images/0cd6a738b702.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -55,7 +55,7 @@ Ver.1.0ではスターターキャラクター3名を含む、計**14名のエ�
 | **コレダ・ベナビデス** | 火 | スタン | ベリーブ工房 |
 | **猫又（ネコマタ）** | 物理 | アタック | カニンガム・グループ |
 
-![エレン・ジョーのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241007222138)
+![エレン・ジョーのキャラクターポートレート](/images/6ddfbd4d1443.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -81,7 +81,7 @@ Ver.1.0ではスターターキャラクター3名を含む、計**14名のエ�
 
 ホロウ内部はTV画面風のマス目で構成された**ルート選択型**のダンジョン。イベントマス・戦闘マス・ショップマスなどを選びながら奥へ進んでいく独特のシステムだ。
 
-![朱鳶（ジュ・ユアン）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240708205906)
+![朱鳶（ジュ・ユアン）のキャラクターポートレート](/images/db5eadfde28c.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -108,7 +108,7 @@ Ver.1.0ではスターターキャラクター3名を含む、計**14名のエ�
 | **メール報酬** | コインやバッテリーなどの育成素材 |
 | **初心者ミッション** | 累計最大1,600ポリクロームを獲得可能 |
 
-![リナのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/40/Agent_Alexandrina_Sebastiane_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707002357)
+![リナのキャラクターポートレート](/images/a8b3e28f1304.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

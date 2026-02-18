@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの全世界ダウンロード数の推
 category: "overseas"
 tags: ["海外情報", "ダウンロード数", "グローバル"]
 date: "2026-01-25"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Splashscreen_Welcome_To_New_Eridu.png/revision/latest?cb=20240628145305"
+thumbnail: "/images/8d02a413fea2.png"
 ---
 
 ※海外コミュニティ発の情報であり、公式発表とは異なる場合があります

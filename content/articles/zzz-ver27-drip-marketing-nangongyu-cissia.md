@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.2.7の事前告知（ドリップ�
 category: "news"
 tags: ["Ver.2.7", "南宮雨", "シシア", "ドリップマーケティング"]
 date: "2026-02-13"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/27/Agent_Nangong_Yu_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260212043019"
+thumbnail: "/images/cea169cdb4ad.png"
 ---
 
 HoYoverseは2026年2月12日〜13日にかけて、『ゼンレスゾーンゼロ』の**Ver.2.7事前告知（ドリップマーケティング）**を公開した。新エージェント2名の情報が明らかになっている。
@@ -13,7 +13,7 @@ HoYoverseは2026年2月12日〜13日にかけて、『ゼンレスゾーンゼ�
 
 ## 南宮雨（ナンゴン・ユウ）──妄想エンジェルのリーダー
 
-![南宮雨のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/27/Agent_Nangong_Yu_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260212043019)
+![南宮雨のキャラクターポートレート](/images/cea169cdb4ad.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -29,13 +29,13 @@ HoYoverseは2026年2月12日〜13日にかけて、『ゼンレスゾーンゼ�
 
 南宮雨は妄想エンジェルの**リーダー兼リードダンサー**。振付を担当し、チームのまとめ役として活動している。
 
-![南宮雨のシティフォーム](https://static.wikia.nocookie.net/zenless-zone-zero/images/9/92/Agent_Nangong_Yu_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260129133019)
+![南宮雨のシティフォーム](/images/4802179b8578.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 公式の紹介文によると「いたずら好きで自信に満ち溢れた性格」であり、「彼女がダンスを始めたら、誰もが目を離せなくなる」とのこと。
 
-![妄想エンジェル南宮雨のコンセプトアート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b3/Angels_of_Delusion_Nangong_Yu_Concept_Artwork.png/revision/latest/scale-to-width-down/1000?cb=20251212122933)
+![妄想エンジェル南宮雨のコンセプトアート](/images/59fa201a707c.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -49,7 +49,7 @@ Ver.2.7前半ガチャでの実装が濃厚。
 
 ## シシア（Cissia）──新ファクション「新エリー都治安局」初のエージェント
 
-![シシアのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/83/Agent_Cissia_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260213044048)
+![シシアのキャラクターポートレート](/images/357b76c298f6.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -65,13 +65,13 @@ Ver.2.7前半ガチャでの実装が濃厚。
 
 シシアは**新ファクション「新エリー都治安局」**に所属する初のプレイアブルエージェント。三叉槍を武器とするスネーク・スィリアンで、Ver.2.6のストーリーではファエトン兄妹を支援する形で登場している。
 
-![シシアのシティフォーム](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/de/Agent_Cissia_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260206091044)
+![シシアのシティフォーム](/images/22d24f73a47a.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
 公式の紹介文では「不思議で怪しげな人物」「N.E.P.S.（新エリー都公安局）に半ば強制的に仕えている」と描写されており、何らかの事情を抱えたキャラクターのようだ。
 
-![新エリー都治安局のファクションアイコン](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Faction_Metropolitan_Order_Division_Icon.png/revision/latest/scale-to-width-down/200?cb=20260213045409)
+![新エリー都治安局のファクションアイコン](/images/560f16369194.png)
 
 <small>※新エリー都治安局ファクションアイコン。画像は公式より引用</small>
 
@@ -85,7 +85,7 @@ Ver.2.7後半ガチャでの実装が見込まれる。
 
 ## 妄想エンジェルが揃う──3人パーティの完成
 
-![妄想エンジェルのグループビジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+![妄想エンジェルのグループビジュアル](/images/002a3ee4cc39.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

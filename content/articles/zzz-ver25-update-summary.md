@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.5の全容を解説。最強ア�
 category: "news"
 tags: ["Ver.2.5", "アップデート", "葉舜光"]
 date: "2025-12-17"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944"
+thumbnail: "/images/069ffe00cea7.png"
 ---
 
 HoYoverseは2025年12月17日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.5**を配信開始した。
 
 本バージョン最大の目玉は、S級アタッカー**「葉舜光（イエ・シュングァン）」**の実装だ。その圧倒的な火力はリリース直後からゲーム環境を一変させ、サービス開始以来最大級のインパクトをもたらした。さらに、エンドコンテンツ「式輿防衛戦」の大幅リニューアルや、無料配布エージェント「趙（ジャオ）」の追加など、見どころの多いアップデートとなっている。
 
-![Ver.2.5 キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944)
+![Ver.2.5 キービジュアル](/images/069ffe00cea7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -21,7 +21,7 @@ HoYoverseは2025年12月17日、アクションRPG『[ゼンレスゾーンゼ�
 
 Ver.2.5前半ガチャで実装される**葉舜光**は、物理属性・刀剣のS級アタッカー。その性能は既存のアタッカーを大きく上回り、リリース初日からプレイヤー間で「壊れ性能」と評された。
 
-![葉舜光（Ye Shunguang）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+![葉舜光（Ye Shunguang）のキャラクターポートレート](/images/db834ee714d7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -52,7 +52,7 @@ Ver.2.5前半ガチャで実装される**葉舜光**は、物理属性・刀剣
 
 Ver.2.5のイベントで無料配布される**趙**は、氷属性のS級ディフェンダーエージェントだ。
 
-![趙（Zhao）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a6/Agent_Zhao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251230033840)
+![趙（Zhao）のキャラクターポートレート](/images/f1e441a4f4aa.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

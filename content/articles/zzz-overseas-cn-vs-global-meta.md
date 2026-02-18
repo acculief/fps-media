@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの中国サーバーとグローバル
 category: "overseas"
 tags: ["海外", "メタ", "中国サーバー", "比較"]
 date: "2026-02-14"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3b/Splashscreen_Encore_for_an_Old_Dream.png/revision/latest?cb=20260205164014"
+thumbnail: "/images/b831a760a4cf.png"
 ---
 
 ※海外コミュニティ発の情報であり、公式発表とは異なる場合があります

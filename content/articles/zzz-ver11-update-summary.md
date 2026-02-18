@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.1.1「深層侵蝕」の全容を�
 category: "news"
 tags: ["Ver.1.1", "アップデート", "蒼角", "セス"]
 date: "2024-08-14"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d3/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251022204525"
+thumbnail: "/images/731e2892eb89.png"
 ---
 
 HoYoverseは2024年8月14日、『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の**Ver.1.1「深層侵蝕」**アップデートを配信した。
 
 グローバルリリースから約40日、待望の初回大型アップデートとなる本バージョンでは、新エージェント2名の追加をはじめ、メインストーリーの続きや新たな戦闘コンテンツが実装されている。本記事では追加要素の詳細をお届けする。
 
-![蒼角（チンイー）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d3/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251022204525)
+![蒼角（チンイー）のキャラクターポートレート](/images/731e2892eb89.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -47,7 +47,7 @@ Ver.1.1前半ガチャで実装される**蒼角（チンイー / Qingyi）**は
 
 Ver.1.1で同時実装される**セス・ローウェル（Seth Lowell）**は、電気属性のA級ディフェンスエージェント。
 
-![セス・ローウェルのキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/f/f9/Agent_Seth_Lowell_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240816041313)
+![セス・ローウェルのキャラクターポートレート](/images/a5d472f3ddf3.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロ Ver.2.6環境の最強キャラクタ�
 category: "character"
 tags: ["Tier表", "最強", "ランキング", "Ver.2.6"]
 date: "2026-02-16"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest?cb=20250715080944"
+thumbnail: "/images/069ffe00cea7.png"
 ---
 
 Ver.2.6環境における**全S級エージェントのTierランキング**を、式輿防衛戦や致命急襲での実戦評価をもとに作成した。
@@ -32,15 +32,15 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 | **ホシミ・ミヤビ** | 氷 | 異常 | 氷異常の最強アタッカー。広範囲に安定した火力 |
 | **千夏** | 物理 | サポート | ATKバフが圧倒的。どのパーティにも入る万能サポート |
 
-![葉舜光 - Ver.2.6環境最強のDPSエージェント](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/bb/Agent_Ye_Shunguang_Portrait.png/revision/latest/scale-to-width-down/800)
+![葉舜光 - Ver.2.6環境最強のDPSエージェント](/images/db834ee714d7.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![ホシミ・ミヤビ - 氷異常の最強アタッカー](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641)
+![ホシミ・ミヤビ - 氷異常の最強アタッカー](/images/de937b057c3b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![千夏（Sunna） - 最強サポートエージェント](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+![千夏（Sunna） - 最強サポートエージェント](/images/f8cbb3a7412b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -60,11 +60,11 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 | **シーザー・キング** | 物理 | 防御 | 最強の防御エージェント。シールドとバフを両立 |
 | **バーニス** | 炎 | 異常 | 炎異常の女王。スリップダメージが凄い |
 
-![エレン・ジョー - 氷属性メインDPS](https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241007222138)
+![エレン・ジョー - 氷属性メインDPS](/images/6ddfbd4d1443.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![ジェーン・ドゥ - 物理異常の最適解](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/11/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240904165715)
+![ジェーン・ドゥ - 物理異常の最適解](/images/d94dda6cf0fd.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

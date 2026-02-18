@@ -4,12 +4,12 @@ description: "Ver.2.6メインイベント「妄想のハーモニー」の攻�
 category: "event"
 tags: ["妄想のハーモニー", "イベント", "無料衣装", "Ver.2.6"]
 date: "2026-02-07"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest?cb=20251226112947"
+thumbnail: "/images/05225169e933.png"
 ---
 
 Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エンジェルのプロデューサーとしてアイドル活動を支援する大型イベント。複数のミニゲームとストーリーで構成されており、完走報酬として**潘隠虎（パン・インフー）の無料衣装**が入手できる。
 
-![妄想エンジェル（Angels of Delusion）のグループビジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5e/Angels_of_Delusion_Group_Introduction.png/revision/latest/scale-to-width-down/1200?cb=20251226112947)
+![妄想エンジェル（Angels of Delusion）のグループビジュアル](/images/002a3ee4cc39.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -32,7 +32,7 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エ
 
 妄想エンジェルのメンバー（千夏、アリア、南宮雨）の**スキルを育成**するパート。
 
-![スンナ（Sunna）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/39/Agent_Sunna_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260207011806)
+![スンナ（Sunna）のポートレート](/images/f8cbb3a7412b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -54,7 +54,7 @@ Ver.2.6のメインイベント**「妄想のハーモニー」**は、妄想エ
 
 音楽コンペティションのステージで**リズムゲーム**をプレイ。
 
-![アリア（Aria）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/0b/Agent_Aria_Portrait.png/revision/latest/scale-to-width-down/800?cb=20260102062809)
+![アリア（Aria）のポートレート](/images/c278710dfbdd.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

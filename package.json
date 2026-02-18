@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "check-images": "node scripts/check-images.mjs",
-    "check-images:quick": "node scripts/check-images.mjs --quick"
+    "check-images:quick": "node scripts/check-images.mjs --quick",
+    "download-images": "node scripts/download-images.mjs",
+    "download-images:dry": "node scripts/download-images.mjs --dry-run"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

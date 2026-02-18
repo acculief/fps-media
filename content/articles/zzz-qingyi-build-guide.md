@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの青衣（チンイー）のおすす
 category: "character"
 tags: ["青衣", "チンイー", "ビルド", "電気属性", "撃破"]
 date: "2026-02-13"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d3/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251022204525"
+thumbnail: "/images/731e2892eb89.png"
 ---
 
 **青衣（チンイー / Qingyi）**はVer.1.1で実装されたS級撃破エージェント。対ホロウ六課に所属し、圧倒的なスタン蓄積速度で環境を支配する。朱鳶との相性が抜群で、「チンイー＋朱鳶」は現在も最強コンビの一角として君臨。

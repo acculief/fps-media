@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.0の全容を解説。新エー�
 category: "news"
 tags: ["Ver.2.0", "アップデート", "ホシミ・ミヤビ", "大型アップデート"]
 date: "2025-01-08"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641"
+thumbnail: "/images/de937b057c3b.png"
 ---
 
 HoYoverseは2025年1月8日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.0「星を繋ぐもの（Tethered to the Stars）」**を配信開始した。
 
 正式サービス開始以来初となる**メジャーバージョンアップ**であり、新エリア・新エージェント・新ストーリーチャプターなど大量のコンテンツが追加されている。本記事では主要な追加要素をまとめてお届けする。
 
-![ホシミ・ミヤビ キャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641)
+![ホシミ・ミヤビ キャラクターポートレート](/images/de937b057c3b.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -44,7 +44,7 @@ Ver.2.0前半ガチャの目玉として実装された**ホシミ・ミヤビ�
 
 Ver.2.0後半（1月22日〜）に実装される**アストラ・ヤオ（Astra Yao）**は、S級サポートエージェント。
 
-![アストラ・ヤオ キャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/44/Agent_Astra_Yao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250122022513)
+![アストラ・ヤオ キャラクターポートレート](/images/b0af31339dc8.png)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
