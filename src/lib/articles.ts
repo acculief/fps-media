@@ -34,7 +34,9 @@ export type Article = {
   toc: TocItem[];
 };
 
-export type ArticleMeta = Omit<Article, "content" | "toc">;
+export type ArticleMeta = Omit<Article, "content" | "toc"> & {
+  readingTime: number;
+};
 
 export function getAllArticles(): ArticleMeta[] {
   if (!fs.existsSync(articlesDirectory)) return [];
@@ -45,7 +47,8 @@ export function getAllArticles(): ArticleMeta[] {
       const slug = fileName.replace(/\.md$/, "");
       const fullPath = path.join(articlesDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data, content } = matter(fileContents);
+      const readingTime = Math.max(1, Math.ceil(content.replace(/\s+/g, "").length / 500));
       return {
         slug,
         title: data.title ?? "",
@@ -54,6 +57,7 @@ export function getAllArticles(): ArticleMeta[] {
         tags: data.tags ?? [],
         date: data.date ?? "",
         thumbnail: data.thumbnail,
+        readingTime,
       };
     });
 

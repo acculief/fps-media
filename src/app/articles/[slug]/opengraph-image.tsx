@@ -4,10 +4,31 @@ import { CATEGORIES, SITE_NAME } from "@/lib/constants";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+export const alt = "記事のサムネイル画像";
 
 export function generateStaticParams() {
   const articles = getAllArticles();
   return articles.map((article) => ({ slug: article.slug }));
+}
+
+async function loadFont(text: string): Promise<ArrayBuffer | null> {
+  try {
+    const uniqueChars = [...new Set(text)].join("");
+    const url = `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&text=${encodeURIComponent(uniqueChars)}`;
+    const css = await fetch(url, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; de-at) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1",
+      },
+    }).then((r) => r.text());
+    const match = css.match(
+      /src:\s*url\((.+?)\)\s+format\('(?:truetype|opentype)'\)/
+    );
+    if (!match?.[1]) return null;
+    return await fetch(match[1]).then((r) => r.arrayBuffer());
+  } catch {
+    return null;
+  }
 }
 
 export default async function OgImage({
@@ -19,6 +40,7 @@ export default async function OgImage({
   const article = await getArticle(slug);
 
   if (!article) {
+    const fallbackFont = await loadFont(SITE_NAME + "Z");
     return new ImageResponse(
       (
         <div
@@ -32,12 +54,18 @@ export default async function OgImage({
             color: "#FACC15",
             fontSize: 48,
             fontWeight: 700,
+            fontFamily: '"Noto Sans JP"',
           }}
         >
           {SITE_NAME}
         </div>
       ),
-      { ...size }
+      {
+        ...size,
+        fonts: fallbackFont
+          ? [{ name: "Noto Sans JP", data: fallbackFont, weight: 700 as const, style: "normal" as const }]
+          : [],
+      }
     );
   }
 
@@ -51,6 +79,15 @@ export default async function OgImage({
       event: "#a78bfa",
     }[article.category] ?? "#FACC15";
 
+  const maxLen = 60;
+  const displayTitle =
+    article.title.length > maxLen
+      ? article.title.slice(0, maxLen) + "..."
+      : article.title;
+
+  const allText = [displayTitle, category?.label ?? "", SITE_NAME, article.date, "Z"].join("");
+  const fontData = await loadFont(allText);
+
   return new ImageResponse(
     (
       <div
@@ -63,6 +100,7 @@ export default async function OgImage({
           padding: "60px 80px",
           position: "relative",
           overflow: "hidden",
+          fontFamily: '"Noto Sans JP", sans-serif',
         }}
       >
         {/* Accent bar */}
@@ -72,8 +110,23 @@ export default async function OgImage({
             top: 0,
             left: 0,
             right: 0,
-            height: 6,
-            backgroundColor: categoryColor,
+            height: 5,
+            background: `linear-gradient(90deg, ${categoryColor}, ${categoryColor}88)`,
+            display: "flex",
+          }}
+        />
+
+        {/* Subtle glow */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: -100,
+            right: -100,
+            width: 400,
+            height: 400,
+            borderRadius: "50%",
+            background: `radial-gradient(circle, ${categoryColor}08 0%, transparent 70%)`,
+            display: "flex",
           }}
         />
 
@@ -88,11 +141,12 @@ export default async function OgImage({
             <span
               style={{
                 color: categoryColor,
-                fontSize: 24,
+                fontSize: 22,
                 fontWeight: 700,
-                border: `2px solid ${categoryColor}`,
+                border: `2px solid ${categoryColor}40`,
                 borderRadius: 8,
-                padding: "4px 16px",
+                padding: "6px 20px",
+                backgroundColor: `${categoryColor}10`,
               }}
             >
               {category.label}
@@ -108,19 +162,16 @@ export default async function OgImage({
             alignItems: "center",
           }}
         >
-          <h1
+          <div
             style={{
               color: "#f3f4f6",
-              fontSize: article.title.length > 40 ? 42 : 52,
+              fontSize: displayTitle.length > 30 ? 42 : 52,
               fontWeight: 700,
-              lineHeight: 1.3,
-              margin: 0,
-              overflow: "hidden",
-              textOverflow: "ellipsis",
+              lineHeight: 1.35,
             }}
           >
-            {article.title}
-          </h1>
+            {displayTitle}
+          </div>
         </div>
 
         {/* Footer: site name + date */}
@@ -139,7 +190,6 @@ export default async function OgImage({
               gap: 12,
             }}
           >
-            {/* Z logo */}
             <div
               style={{
                 width: 40,
@@ -160,7 +210,7 @@ export default async function OgImage({
             <span
               style={{
                 color: "#FACC15",
-                fontSize: 28,
+                fontSize: 26,
                 fontWeight: 700,
               }}
             >
@@ -170,7 +220,7 @@ export default async function OgImage({
           <span
             style={{
               color: "#6b7280",
-              fontSize: 22,
+              fontSize: 20,
             }}
           >
             {article.date}
@@ -178,6 +228,11 @@ export default async function OgImage({
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: fontData
+        ? [{ name: "Noto Sans JP", data: fontData, weight: 700 as const, style: "normal" as const }]
+        : [],
+    }
   );
 }

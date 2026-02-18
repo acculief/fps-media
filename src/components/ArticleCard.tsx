@@ -53,7 +53,10 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
         <p className="text-sm text-gray-400 line-clamp-2">
           {article.description}
         </p>
-        <time className="text-xs text-gray-500 mt-3 block">{article.date}</time>
+        <div className="flex items-center gap-3 text-xs text-gray-500 mt-3">
+          <time>{article.date}</time>
+          <span>約{article.readingTime}分</span>
+        </div>
       </div>
     </Link>
   );

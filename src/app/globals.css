@@ -49,8 +49,8 @@ body {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #1f2937;
+  padding-left: 0.75rem;
+  border-left: 3px solid #facc15;
   scroll-margin-top: 5rem;
 }
 

@@ -158,6 +158,17 @@ export default function Home() {
                   <span className={`text-2xl font-bold w-8 text-center shrink-0 ${rankColors[i] ?? "text-gray-600"}`}>
                     {i + 1}
                   </span>
+                  {article.thumbnail && (
+                    <div className="relative w-16 h-10 rounded overflow-hidden shrink-0 bg-gray-800 hidden sm:block">
+                      <Image
+                        src={article.thumbnail}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="64px"
+                      />
+                    </div>
+                  )}
                   <div className="min-w-0">
                     {cat && (
                       <span className={`text-xs font-medium ${cat.color}`}>
