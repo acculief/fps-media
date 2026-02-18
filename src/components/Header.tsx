@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 
 const CATEGORIES = [
@@ -17,7 +18,7 @@ export function Header() {
   return (
     <header className="border-b border-gray-800/80 bg-gray-950/90 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a
+        <Link
           href="/"
           className="flex items-center gap-2 text-2xl font-bold text-yellow-400 tracking-tight"
         >
@@ -32,18 +33,18 @@ export function Header() {
             <path d="M8 9h16l-12 14h16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           {SITE_NAME}
-        </a>
+        </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {CATEGORIES.map((cat) => (
-            <a
+            <Link
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
               className={`text-gray-300 ${cat.color} transition-colors`}
             >
               {cat.label}
-            </a>
+            </Link>
           ))}
-          <a
+          <Link
             href="/search"
             aria-label="記事を検索"
             className="text-gray-400 hover:text-white transition-colors"
@@ -61,7 +62,7 @@ export function Header() {
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
-          </a>
+          </Link>
         </nav>
         <button
           onClick={() => setOpen(!open)}
@@ -102,30 +103,30 @@ export function Header() {
         <nav className="md:hidden border-t border-gray-800 bg-gray-950">
           <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-1">
             {CATEGORIES.map((cat) => (
-              <a
+              <Link
                 key={cat.slug}
                 href={`/articles?cat=${cat.slug}`}
                 onClick={() => setOpen(false)}
                 className={`py-2.5 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-900 ${cat.color} transition-colors`}
               >
                 {cat.label}
-              </a>
+              </Link>
             ))}
             <div className="border-t border-gray-800 mt-1 pt-2 flex flex-col gap-1">
-              <a
+              <Link
                 href="/search"
                 onClick={() => setOpen(false)}
                 className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
               >
                 記事を検索
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/tags"
                 onClick={() => setOpen(false)}
                 className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
               >
                 タグ一覧
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

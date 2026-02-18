@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 
 export default function NotFound() {
@@ -7,72 +8,13 @@ export default function NotFound() {
         <svg
           width="80"
           height="80"
-          viewBox="0 0 28 28"
+          viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect
-            x="2"
-            y="4"
-            width="24"
-            height="17"
-            rx="2"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <line
-            x1="10"
-            y1="24"
-            x2="18"
-            y2="24"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <line
-            x1="14"
-            y1="21"
-            x2="14"
-            y2="24"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <line
-            x1="9"
-            y1="10"
-            x2="12"
-            y2="14"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <line
-            x1="12"
-            y1="10"
-            x2="9"
-            y2="14"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <line
-            x1="16"
-            y1="10"
-            x2="19"
-            y2="14"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <line
-            x1="19"
-            y1="10"
-            x2="16"
-            y2="14"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+          <rect x="1" y="1" width="30" height="30" rx="6" stroke="currentColor" strokeWidth="1.5"/>
+          <path d="M8 9h16l-12 14h16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <line x1="10" y1="19" x2="22" y2="19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
         </svg>
       </div>
       <h1 className="text-5xl font-bold text-yellow-400 mb-2">404</h1>
@@ -81,18 +23,18 @@ export default function NotFound() {
         お探しのページは削除されたか、URLが変更された可能性があります。
       </p>
       <div className="flex gap-4">
-        <a
+        <Link
           href="/"
           className="bg-yellow-400 text-gray-900 font-semibold px-6 py-2.5 rounded-lg hover:bg-yellow-300 transition-colors"
         >
           {SITE_NAME}トップへ
-        </a>
-        <a
+        </Link>
+        <Link
           href="/articles"
           className="border border-gray-700 text-gray-300 px-6 py-2.5 rounded-lg hover:border-gray-500 transition-colors"
         >
           記事一覧
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { getAllArticles, getArticlesByCategory } from "@/lib/articles";
 import { CATEGORIES, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 const ARTICLES_PER_PAGE = 12;
@@ -51,7 +52,7 @@ export default async function ArticlesPage({
         role="tablist"
         aria-label="カテゴリフィルター"
       >
-        <a
+        <Link
           href="/articles"
           role="tab"
           aria-selected={!cat}
@@ -62,9 +63,9 @@ export default async function ArticlesPage({
           }`}
         >
           すべて
-        </a>
+        </Link>
         {CATEGORIES.map((c) => (
-          <a
+          <Link
             key={c.slug}
             href={`/articles?cat=${c.slug}`}
             role="tab"
@@ -76,7 +77,7 @@ export default async function ArticlesPage({
             }`}
           >
             {c.label}
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -99,13 +100,13 @@ export default async function ArticlesPage({
           className="flex items-center justify-center gap-2 mt-12"
         >
           {safePage > 1 ? (
-            <a
+            <Link
               href={buildUrl(safePage - 1)}
               aria-label="前のページへ"
               className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition-colors"
             >
               前のページ
-            </a>
+            </Link>
           ) : (
             <span
               aria-hidden="true"
@@ -118,7 +119,7 @@ export default async function ArticlesPage({
           <ul className="flex items-center gap-1 list-none">
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
               <li key={p}>
-                <a
+                <Link
                   href={buildUrl(p)}
                   aria-label={`${p}ページ目`}
                   aria-current={p === safePage ? "page" : undefined}
@@ -129,19 +130,19 @@ export default async function ArticlesPage({
                   }`}
                 >
                   {p}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
 
           {safePage < totalPages ? (
-            <a
+            <Link
               href={buildUrl(safePage + 1)}
               aria-label="次のページへ"
               className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition-colors"
             >
               次のページ
-            </a>
+            </Link>
           ) : (
             <span
               aria-hidden="true"

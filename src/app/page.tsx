@@ -2,6 +2,7 @@ import { getAllArticles, getPopularArticles } from "@/lib/articles";
 import { SITE_NAME, SITE_DESCRIPTION, CATEGORIES } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const articles = getAllArticles();
@@ -33,7 +34,7 @@ export default function Home() {
       {/* Featured Article */}
       {hero && (
         <section className="mb-12">
-          <a
+          <Link
             href={`/articles/${hero.slug}`}
             className="group block bg-gray-900/80 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-200 md:flex"
           >
@@ -76,7 +77,7 @@ export default function Home() {
               </p>
               <time className="text-xs text-gray-500">{hero.date}</time>
             </div>
-          </a>
+          </Link>
         </section>
       )}
 
@@ -85,12 +86,12 @@ export default function Home() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold text-white">最新記事</h2>
-            <a
+            <Link
               href="/articles"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               すべて見る →
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {latestArticles.map((article) => (
@@ -104,7 +105,7 @@ export default function Home() {
       <section className="mb-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-16">
           {CATEGORIES.map((cat) => (
-            <a
+            <Link
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
               className={`${cat.bg} border ${cat.border} rounded-lg p-4 text-center hover:brightness-125 transition-all duration-200`}
@@ -112,7 +113,7 @@ export default function Home() {
               <span className={`text-sm font-medium ${cat.color}`}>
                 {cat.label}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -125,7 +126,7 @@ export default function Home() {
             {popularArticles.map((article, i) => {
               const cat = CATEGORIES.find((c) => c.slug === article.category);
               return (
-                <a
+                <Link
                   key={article.slug}
                   href={`/articles/${article.slug}`}
                   className="flex items-center gap-4 p-4 hover:bg-gray-800/50 transition-colors group"
@@ -146,7 +147,7 @@ export default function Home() {
                   <time className="text-xs text-gray-600 shrink-0 ml-auto">
                     {article.date}
                   </time>
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -158,12 +159,12 @@ export default function Home() {
         <section key={cat.slug} className="mb-14">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-bold text-white">{cat.label}</h2>
-            <a
+            <Link
               href={`/articles?cat=${cat.slug}`}
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               もっと見る →
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {cat.articles.map((article) => (

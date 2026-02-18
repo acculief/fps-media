@@ -9,6 +9,7 @@ import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ShareButtons } from "@/components/ShareButtons";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -136,18 +137,18 @@ export default async function ArticlePage({
           aria-label="パンくずリスト"
           className="flex items-center gap-2 text-sm text-gray-500 mb-4"
         >
-          <a href="/" className="hover:text-white transition-colors">
+          <Link href="/" className="hover:text-white transition-colors">
             ホーム
-          </a>
+          </Link>
           <span aria-hidden="true">/</span>
           {category && (
             <>
-              <a
+              <Link
                 href={`/articles?cat=${category.slug}`}
                 className="hover:text-white transition-colors"
               >
                 {category.label}
-              </a>
+              </Link>
               <span aria-hidden="true">/</span>
             </>
           )}
@@ -162,13 +163,13 @@ export default async function ArticlePage({
           {article.tags.length > 0 && (
             <div className="flex gap-2 flex-wrap">
               {article.tags.map((tag) => (
-                <a
+                <Link
                   key={tag}
                   href={`/tags/${encodeURIComponent(tag)}`}
                   className="bg-gray-800 px-2 py-0.5 rounded text-xs hover:bg-gray-700 hover:text-white transition-colors"
                 >
                   {tag}
-                </a>
+                </Link>
               ))}
             </div>
           )}
@@ -216,7 +217,7 @@ export default async function ArticlePage({
             className="mt-10 pt-6 border-t border-gray-800 grid grid-cols-2 gap-4"
           >
             {prev ? (
-              <a
+              <Link
                 href={`/articles/${prev.slug}`}
                 className="group text-left"
               >
@@ -224,12 +225,12 @@ export default async function ArticlePage({
                 <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
                   {prev.title}
                 </span>
-              </a>
+              </Link>
             ) : (
               <span />
             )}
             {next ? (
-              <a
+              <Link
                 href={`/articles/${next.slug}`}
                 className="group text-right"
               >
@@ -237,7 +238,7 @@ export default async function ArticlePage({
                 <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
                   {next.title}
                 </span>
-              </a>
+              </Link>
             ) : (
               <span />
             )}

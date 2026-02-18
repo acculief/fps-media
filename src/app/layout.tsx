@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
+import Link from "next/link";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, CATEGORIES } from "@/lib/constants";
 import { Header } from "@/components/Header";
 import "./globals.css";
@@ -76,12 +77,12 @@ function Footer() {
             <ul className="space-y-1.5">
               {CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
-                  <a
+                  <Link
                     href={`/articles?cat=${cat.slug}`}
                     className="text-xs text-gray-400 hover:text-white transition-colors"
                   >
                     {cat.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -92,28 +93,28 @@ function Footer() {
             <h3 className="text-sm font-bold text-gray-200 mb-3">リンク</h3>
             <ul className="space-y-1.5">
               <li>
-                <a
+                <Link
                   href="/articles"
                   className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   記事一覧
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/tags"
                   className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   タグ一覧
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/feed.xml"
                   className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   RSS フィード
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -7,6 +7,8 @@ date: "2026-01-25"
 thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Splashscreen_Welcome_To_New_Eridu.png/revision/latest?cb=20240628145305"
 ---
 
+※海外コミュニティ発の情報であり、公式発表とは異なる場合があります
+
 HoYoverseが展開する『ゼンレスゾーンゼロ』は、2024年7月4日のグローバルリリース以降、各プラットフォーム合計で驚異的なダウンロード数を記録してきた。公式発表をもとに、主要なマイルストーンを振り返る。
 
 ---

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArticleMeta } from "@/lib/articles";
 import { CATEGORIES } from "@/lib/constants";
 
@@ -12,7 +13,7 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
   const fresh = isNew(article.date);
 
   return (
-    <a
+    <Link
       href={`/articles/${article.slug}`}
       className="group bg-gray-900/80 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-200"
     >
@@ -53,6 +54,6 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
         </p>
         <time className="text-xs text-gray-500 mt-3 block">{article.date}</time>
       </div>
-    </a>
+    </Link>
   );
 }

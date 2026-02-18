@@ -1,6 +1,7 @@
 import { getAllTags, getArticlesByTag } from "@/lib/articles";
 import { SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -36,13 +37,13 @@ export default async function TagPage({
   return (
     <div>
       <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-        <a href="/" className="hover:text-white transition-colors">
+        <Link href="/" className="hover:text-white transition-colors">
           ホーム
-        </a>
+        </Link>
         <span>/</span>
-        <a href="/tags" className="hover:text-white transition-colors">
+        <Link href="/tags" className="hover:text-white transition-colors">
           タグ一覧
-        </a>
+        </Link>
         <span>/</span>
         <span className="text-gray-600">{decoded}</span>
       </nav>
