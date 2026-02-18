@@ -64,20 +64,20 @@ function Footer() {
             <h3 className="text-sm font-bold text-yellow-400 mb-3">
               {SITE_NAME}
             </h3>
-            <p className="text-xs text-gray-500 leading-relaxed">
-              『ゼンレスゾーンゼロ』の最新情報をお届けする非公式ファンサイト。公式アプデ、海外リーク、キャラ評価、攻略情報をまとめています。
+            <p className="text-xs text-gray-400 leading-relaxed">
+              『ゼンレスゾーンゼロ』の最新情報をお届けする非公式ファンサイト。公式アプデ、海外速報、キャラ評価、攻略情報をまとめています。
             </p>
           </div>
 
           {/* Categories */}
           <div>
-            <h3 className="text-sm font-bold text-gray-300 mb-3">カテゴリ</h3>
+            <h3 className="text-sm font-bold text-gray-200 mb-3">カテゴリ</h3>
             <ul className="space-y-1.5">
               {CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
                   <a
                     href={`/articles?cat=${cat.slug}`}
-                    className="text-xs text-gray-500 hover:text-yellow-400 transition-colors"
+                    className="text-xs text-gray-400 hover:text-white transition-colors"
                   >
                     {cat.label}
                   </a>
@@ -88,12 +88,12 @@ function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="text-sm font-bold text-gray-300 mb-3">リンク</h3>
+            <h3 className="text-sm font-bold text-gray-200 mb-3">リンク</h3>
             <ul className="space-y-1.5">
               <li>
                 <a
                   href="/articles"
-                  className="text-xs text-gray-500 hover:text-yellow-400 transition-colors"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   記事一覧
                 </a>
@@ -101,7 +101,7 @@ function Footer() {
               <li>
                 <a
                   href="/tags"
-                  className="text-xs text-gray-500 hover:text-yellow-400 transition-colors"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   タグ一覧
                 </a>
@@ -109,7 +109,7 @@ function Footer() {
               <li>
                 <a
                   href="/feed.xml"
-                  className="text-xs text-gray-500 hover:text-yellow-400 transition-colors"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
                 >
                   RSS フィード
                 </a>

@@ -124,7 +124,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 千夏未所持の場合の代替。アストラ・ヤオのサポート性能も十分に高く、安定した運用が可能。
 
-![アストラ・ヤオのポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/5/5d/Agent_Astra_Yao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250715080944)
+![アストラ・ヤオのポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/44/Agent_Astra_Yao_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250122022513)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -132,7 +132,7 @@ Ver.2.5で実装されたS級アタッカー**葉舜光（イェ・シュング�
 
 攻撃特化の編成。防御面は薄いが、短時間で敵を倒しきれるならこちらが火力は上。上級者向け。
 
-![リナ（Rina）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e2/Agent_Rina_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083122)
+![リナ（Rina）のポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/4/40/Agent_Alexandrina_Sebastiane_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240707002357)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

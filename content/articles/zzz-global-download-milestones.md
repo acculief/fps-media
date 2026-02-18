@@ -4,7 +4,7 @@ description: "ゼンレスゾーンゼロの全世界ダウンロード数の推
 category: "overseas"
 tags: ["海外情報", "ダウンロード数", "グローバル"]
 date: "2026-01-25"
-thumbnail: "https://fastcdn.hoyoverse.com/content-v2/nap/102027/55576ebbb6ac35e73e0e498eebcc0243_4129498948498498767.png"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/ba/Splashscreen_Welcome_To_New_Eridu.png/revision/latest?cb=20240628145305"
 ---
 
 HoYoverseが展開する『ゼンレスゾーンゼロ』は、2024年7月4日のグローバルリリース以降、各プラットフォーム合計で驚異的なダウンロード数を記録してきた。公式発表をもとに、主要なマイルストーンを振り返る。

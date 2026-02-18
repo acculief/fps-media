@@ -138,7 +138,7 @@ export default async function ArticlePage({
           aria-label="パンくずリスト"
           className="flex items-center gap-2 text-sm text-gray-500 mb-4"
         >
-          <a href="/" className="hover:text-yellow-400 transition-colors">
+          <a href="/" className="hover:text-white transition-colors">
             ホーム
           </a>
           <span aria-hidden="true">/</span>
@@ -146,7 +146,7 @@ export default async function ArticlePage({
             <>
               <a
                 href={`/articles?cat=${category.slug}`}
-                className="hover:text-yellow-400 transition-colors"
+                className="hover:text-white transition-colors"
               >
                 {category.label}
               </a>
@@ -167,7 +167,7 @@ export default async function ArticlePage({
                 <a
                   key={tag}
                   href={`/tags/${encodeURIComponent(tag)}`}
-                  className="bg-gray-800 px-2 py-0.5 rounded text-xs hover:bg-gray-700 hover:text-yellow-400 transition-colors"
+                  className="bg-gray-800 px-2 py-0.5 rounded text-xs hover:bg-gray-700 hover:text-white transition-colors"
                 >
                   {tag}
                 </a>
@@ -191,7 +191,7 @@ export default async function ArticlePage({
                 >
                   <a
                     href={`#${item.id}`}
-                    className="text-sm text-gray-400 hover:text-yellow-400 transition-colors leading-relaxed"
+                    className="text-sm text-gray-400 hover:text-white transition-colors leading-relaxed"
                   >
                     {item.text}
                   </a>
@@ -223,7 +223,7 @@ export default async function ArticlePage({
                 className="group text-left"
               >
                 <span className="text-xs text-gray-600">前の記事</span>
-                <span className="block text-sm text-gray-400 group-hover:text-yellow-400 transition-colors line-clamp-2 mt-1">
+                <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
                   {prev.title}
                 </span>
               </a>
@@ -236,7 +236,7 @@ export default async function ArticlePage({
                 className="group text-right"
               >
                 <span className="text-xs text-gray-600">次の記事</span>
-                <span className="block text-sm text-gray-400 group-hover:text-yellow-400 transition-colors line-clamp-2 mt-1">
+                <span className="block text-sm text-gray-400 group-hover:text-white transition-colors line-clamp-2 mt-1">
                   {next.title}
                 </span>
               </a>

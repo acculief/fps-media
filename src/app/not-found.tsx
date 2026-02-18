@@ -89,7 +89,7 @@ export default function NotFound() {
         </a>
         <a
           href="/articles"
-          className="border border-gray-700 text-gray-300 px-6 py-2.5 rounded-lg hover:border-yellow-400/50 transition-colors"
+          className="border border-gray-700 text-gray-300 px-6 py-2.5 rounded-lg hover:border-gray-500 transition-colors"
         >
           記事一覧
         </a>

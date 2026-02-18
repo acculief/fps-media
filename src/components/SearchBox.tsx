@@ -20,7 +20,7 @@ function highlightMatch(text: string, query: string): React.ReactNode {
   return (
     <>
       {text.slice(0, idx)}
-      <mark className="bg-yellow-400/20 text-yellow-400">{text.slice(idx, idx + query.length)}</mark>
+      <mark className="bg-amber-400/20 text-amber-300">{text.slice(idx, idx + query.length)}</mark>
       {text.slice(idx + query.length)}
     </>
   );
@@ -64,7 +64,7 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="記事タイトル、タグ、キーワードで検索..."
           autoFocus
-          className="w-full bg-gray-900 border border-gray-700 rounded-lg pl-12 pr-4 py-3.5 text-base placeholder-gray-600 focus:border-yellow-400 focus:outline-none transition-colors"
+          className="w-full bg-gray-900 border border-gray-700 rounded-lg pl-12 pr-4 py-3.5 text-base placeholder-gray-600 focus:border-gray-400 focus:outline-none transition-colors"
         />
       </div>
 
@@ -82,10 +82,10 @@ export function SearchBox({ articles }: { articles: SearchableArticle[] }) {
             <a
               key={article.slug}
               href={`/articles/${article.slug}`}
-              className="block bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-yellow-400/50 transition-colors"
+              className="block bg-gray-900 border border-gray-800 rounded-lg p-4 hover:border-gray-600 transition-colors"
             >
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs text-yellow-400">
+                <span className="text-xs text-gray-300">
                   {article.categoryLabel}
                 </span>
                 <time className="text-xs text-gray-600">{article.date}</time>

@@ -20,9 +20,9 @@ export default function TagsPage() {
           <a
             key={tag}
             href={`/tags/${encodeURIComponent(tag)}`}
-            className="group flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2.5 hover:border-yellow-400/50 transition-colors"
+            className="group flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2.5 hover:border-gray-600 transition-colors"
           >
-            <span className="text-sm group-hover:text-yellow-400 transition-colors">
+            <span className="text-sm group-hover:text-white transition-colors">
               {tag}
             </span>
             <span className="text-xs text-gray-600 bg-gray-800 px-2 py-0.5 rounded-full">

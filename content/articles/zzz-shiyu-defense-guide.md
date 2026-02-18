@@ -83,7 +83,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **バーニス + ライター + ルーシー**
 
-![バーニス](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/83/Agent_Burnice_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240919025126)
+![バーニス](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d1/Agent_Burnice_White_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241016140944)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -93,7 +93,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **ホシミ・ミヤビ + アストラ・ヤオ + リナ**
 
-![ホシミ・ミヤビ](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b2/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250106042755)
+![ホシミ・ミヤビ](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -103,7 +103,7 @@ Ver.2.5で式輿防衛戦に大幅な改修が入った。
 
 **朱鸢 + チンイー + ニコル**
 
-![朱鸢（Zhu Yuan）](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/82/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083147)
+![朱鸢（Zhu Yuan）](https://static.wikia.nocookie.net/zenless-zone-zero/images/0/07/Agent_Zhu_Yuan_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240708205906)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

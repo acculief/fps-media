@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.4の全容を解説。ハーフ�
 category: "news"
 tags: ["Ver.2.4", "アップデート", "ハーフアニバーサリー"]
 date: "2025-06-11"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/8/81/Zenless_Zone_Zero.png/revision/latest/scale-to-width-down/800"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b1/Splashscreen_The_Impending_Crash_of_Waves.png/revision/latest?cb=20250716134710"
 ---
 
 HoYoverseは2025年6月11日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.4**を配信開始した。
 
 本バージョンは**ハーフアニバーサリー（0.5周年）**の記念バージョンとなっており、豪華な報酬配布や記念イベントが多数実装されている。サービス開始から半年を迎え、プレイヤー人口も順調に拡大を続ける本作の節目にふさわしいアップデートだ。
 
-![ゼンレスゾーンゼロ キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/81/Zenless_Zone_Zero.png/revision/latest/scale-to-width-down/800)
+![ゼンレスゾーンゼロ キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b1/Splashscreen_The_Impending_Crash_of_Waves.png/revision/latest?cb=20250716134710)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

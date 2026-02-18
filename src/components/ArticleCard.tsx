@@ -14,7 +14,7 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
   return (
     <a
       href={`/articles/${article.slug}`}
-      className="group bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-yellow-400/50 transition-colors"
+      className="group bg-gray-900/80 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-200"
     >
       <div className="relative bg-gray-800 h-44 overflow-hidden">
         {article.thumbnail ? (
@@ -43,17 +43,17 @@ export function ArticleCard({ article }: { article: ArticleMeta }) {
       </div>
       <div className="p-4">
         {category && (
-          <span className="text-xs text-yellow-400 font-medium">
+          <span className={`text-xs font-medium ${category.color}`}>
             {category.label}
           </span>
         )}
-        <h3 className="font-bold mt-1 mb-2 group-hover:text-yellow-400 transition-colors line-clamp-2">
+        <h3 className="font-bold mt-1 mb-2 text-gray-100 group-hover:text-white transition-colors line-clamp-2">
           {article.title}
         </h3>
         <p className="text-sm text-gray-400 line-clamp-2">
           {article.description}
         </p>
-        <time className="text-xs text-gray-600 mt-3 block">{article.date}</time>
+        <time className="text-xs text-gray-500 mt-3 block">{article.date}</time>
       </div>
     </a>
   );

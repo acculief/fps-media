@@ -57,7 +57,7 @@ export default async function ArticlesPage({
           aria-selected={!cat}
           className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
             !cat
-              ? "bg-yellow-400/10 border-yellow-400 text-yellow-400"
+              ? "bg-white/10 border-white text-white"
               : "border-gray-700 text-gray-400 hover:border-gray-500"
           }`}
         >
@@ -71,7 +71,7 @@ export default async function ArticlesPage({
             aria-selected={cat === c.slug}
             className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
               cat === c.slug
-                ? "bg-yellow-400/10 border-yellow-400 text-yellow-400"
+                ? `${c.bg} ${c.border} ${c.color}`
                 : "border-gray-700 text-gray-400 hover:border-gray-500"
             }`}
           >
@@ -102,7 +102,7 @@ export default async function ArticlesPage({
             <a
               href={buildUrl(safePage - 1)}
               aria-label="前のページへ"
-              className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-yellow-400/50 transition-colors"
+              className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition-colors"
             >
               前のページ
             </a>
@@ -124,8 +124,8 @@ export default async function ArticlesPage({
                   aria-current={p === safePage ? "page" : undefined}
                   className={`w-10 h-10 flex items-center justify-center rounded-lg text-sm transition-colors ${
                     p === safePage
-                      ? "bg-yellow-400 text-gray-900 font-bold"
-                      : "border border-gray-700 hover:border-yellow-400/50"
+                      ? "bg-white text-gray-900 font-bold"
+                      : "border border-gray-700 hover:border-gray-500"
                   }`}
                 >
                   {p}
@@ -138,7 +138,7 @@ export default async function ArticlesPage({
             <a
               href={buildUrl(safePage + 1)}
               aria-label="次のページへ"
-              className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-yellow-400/50 transition-colors"
+              className="px-4 py-2 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition-colors"
             >
               次のページ
             </a>

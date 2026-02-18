@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.1.1「深層侵蝕」の全容を�
 category: "news"
 tags: ["Ver.1.1", "アップデート", "蒼角", "セス"]
 date: "2024-08-14"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/2/26/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083115"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d3/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251022204525"
 ---
 
 HoYoverseは2024年8月14日、『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の**Ver.1.1「深層侵蝕」**アップデートを配信した。
 
 グローバルリリースから約40日、待望の初回大型アップデートとなる本バージョンでは、新エージェント2名の追加をはじめ、メインストーリーの続きや新たな戦闘コンテンツが実装されている。本記事では追加要素の詳細をお届けする。
 
-![蒼角（チンイー）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/2/26/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083115)
+![蒼角（チンイー）のキャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d3/Agent_Qingyi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20251022204525)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

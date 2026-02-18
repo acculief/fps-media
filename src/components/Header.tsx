@@ -4,18 +4,18 @@ import { useState } from "react";
 import { SITE_NAME } from "@/lib/constants";
 
 const CATEGORIES = [
-  { slug: "news", label: "ニュース" },
-  { slug: "overseas", label: "海外速報" },
-  { slug: "character", label: "キャラクター" },
-  { slug: "guide", label: "攻略" },
-  { slug: "event", label: "イベント" },
+  { slug: "news", label: "ニュース", color: "hover:text-yellow-400" },
+  { slug: "overseas", label: "海外速報", color: "hover:text-cyan-400" },
+  { slug: "character", label: "キャラクター", color: "hover:text-rose-400" },
+  { slug: "guide", label: "攻略", color: "hover:text-emerald-400" },
+  { slug: "event", label: "イベント", color: "hover:text-violet-400" },
 ] as const;
 
 export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-gray-800/80 bg-gray-950/90 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <a
           href="/"
@@ -63,7 +63,7 @@ export function Header() {
             <a
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
-              className="hover:text-yellow-400 transition-colors"
+              className={`text-gray-300 ${cat.color} transition-colors`}
             >
               {cat.label}
             </a>
@@ -71,7 +71,7 @@ export function Header() {
           <a
             href="/search"
             aria-label="記事を検索"
-            className="text-gray-400 hover:text-yellow-400 transition-colors"
+            className="text-gray-400 hover:text-white transition-colors"
           >
             <svg
               width="18"
@@ -90,7 +90,7 @@ export function Header() {
         </nav>
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-gray-400 hover:text-yellow-400 transition-colors"
+          className="md:hidden p-2 text-gray-400 hover:text-white transition-colors"
           aria-label="メニュー"
         >
           {open ? (
@@ -131,7 +131,7 @@ export function Header() {
                 key={cat.slug}
                 href={`/articles?cat=${cat.slug}`}
                 onClick={() => setOpen(false)}
-                className="py-2.5 px-3 rounded-lg text-sm hover:bg-gray-900 hover:text-yellow-400 transition-colors"
+                className={`py-2.5 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-900 ${cat.color} transition-colors`}
               >
                 {cat.label}
               </a>
@@ -140,14 +140,14 @@ export function Header() {
               <a
                 href="/search"
                 onClick={() => setOpen(false)}
-                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-yellow-400 transition-colors block"
+                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
               >
                 記事を検索
               </a>
               <a
                 href="/tags"
                 onClick={() => setOpen(false)}
-                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-yellow-400 transition-colors block"
+                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
               >
                 タグ一覧
               </a>

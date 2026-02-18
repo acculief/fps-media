@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.3の全容を解説。新エー�
 category: "news"
 tags: ["Ver.2.3", "アップデート"]
 date: "2025-04-30"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/8/81/Zenless_Zone_Zero.png/revision/latest/scale-to-width-down/800"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b7/Splashscreen_Bury_Your_Tears_With_the_Past.png/revision/latest?cb=20250423004706"
 ---
 
 HoYoverseは2025年4月30日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』の大型アップデート**Ver.2.3**を配信開始した。
 
 新エージェントの追加に加え、メインストーリーの大きな転換点となる新章が実装されている。本記事ではVer.2.3の主要な追加要素をまとめる。
 
-![ゼンレスゾーンゼロ キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/8/81/Zenless_Zone_Zero.png/revision/latest/scale-to-width-down/800)
+![ゼンレスゾーンゼロ キービジュアル](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b7/Splashscreen_Bury_Your_Tears_With_the_Past.png/revision/latest?cb=20250423004706)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

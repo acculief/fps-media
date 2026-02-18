@@ -13,12 +13,16 @@ export default function Home() {
     articles: articles.filter((a) => a.category === cat.slug).slice(0, 3),
   })).filter((cat) => cat.articles.length > 0);
 
+  const heroCategory = hero
+    ? CATEGORIES.find((c) => c.slug === hero.category)
+    : undefined;
+
   return (
     <div>
       {/* Hero */}
       <section className="text-center py-12 mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          <span className="text-yellow-400">{SITE_NAME}</span>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+          {SITE_NAME}
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
           {SITE_DESCRIPTION}
@@ -30,7 +34,7 @@ export default function Home() {
         <section className="mb-12">
           <a
             href={`/articles/${hero.slug}`}
-            className="group block bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-yellow-400/50 transition-colors md:flex"
+            className="group block bg-gray-900/80 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-600 transition-all duration-200 md:flex"
           >
             <div className="relative bg-gray-800 h-56 md:h-auto md:w-1/2 overflow-hidden">
               {hero.thumbnail ? (
@@ -83,16 +87,18 @@ export default function Home() {
               )}
             </div>
             <div className="p-6 md:w-1/2 md:flex md:flex-col md:justify-center">
-              <span className="text-xs text-yellow-400 font-medium">
-                {CATEGORIES.find((c) => c.slug === hero.category)?.label}
-              </span>
-              <h2 className="text-2xl font-bold mt-2 mb-3 group-hover:text-yellow-400 transition-colors">
+              {heroCategory && (
+                <span className={`text-xs font-medium ${heroCategory.color}`}>
+                  {heroCategory.label}
+                </span>
+              )}
+              <h2 className="text-2xl font-bold mt-2 mb-3 text-gray-100 group-hover:text-white transition-colors">
                 {hero.title}
               </h2>
               <p className="text-gray-400 line-clamp-3 mb-4">
                 {hero.description}
               </p>
-              <time className="text-xs text-gray-600">{hero.date}</time>
+              <time className="text-xs text-gray-500">{hero.date}</time>
             </div>
           </a>
         </section>
@@ -102,10 +108,10 @@ export default function Home() {
       {latestArticles.length > 0 && (
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold">最新記事</h2>
+            <h2 className="text-xl font-bold text-white">最新記事</h2>
             <a
               href="/articles"
-              className="text-sm text-yellow-400 hover:underline"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               すべて見る →
             </a>
@@ -125,9 +131,11 @@ export default function Home() {
             <a
               key={cat.slug}
               href={`/articles?cat=${cat.slug}`}
-              className="bg-gray-900 border border-gray-800 rounded-lg p-4 text-center hover:border-yellow-400 transition-colors"
+              className={`${cat.bg} border ${cat.border} rounded-lg p-4 text-center hover:brightness-125 transition-all duration-200`}
             >
-              <span className="text-sm font-medium">{cat.label}</span>
+              <span className={`text-sm font-medium ${cat.color}`}>
+                {cat.label}
+              </span>
             </a>
           ))}
         </div>
@@ -137,10 +145,10 @@ export default function Home() {
       {categoryArticles.map((cat) => (
         <section key={cat.slug} className="mb-14">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold">{cat.label}</h2>
+            <h2 className="text-xl font-bold text-white">{cat.label}</h2>
             <a
               href={`/articles?cat=${cat.slug}`}
-              className="text-sm text-yellow-400 hover:underline"
+              className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               もっと見る →
             </a>

@@ -36,11 +36,11 @@ export default async function TagPage({
   return (
     <div>
       <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-        <a href="/" className="hover:text-yellow-400 transition-colors">
+        <a href="/" className="hover:text-white transition-colors">
           ホーム
         </a>
         <span>/</span>
-        <a href="/tags" className="hover:text-yellow-400 transition-colors">
+        <a href="/tags" className="hover:text-white transition-colors">
           タグ一覧
         </a>
         <span>/</span>

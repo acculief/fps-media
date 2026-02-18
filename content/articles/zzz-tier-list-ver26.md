@@ -36,7 +36,7 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![ホシミ・ミヤビ - 氷異常の最強アタッカー](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b2/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250106042755)
+![ホシミ・ミヤビ - 氷異常の最強アタッカー](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/da/Agent_Hoshimi_Miyabi_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250329051641)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
@@ -60,11 +60,11 @@ Ver.2.6環境における**全S級エージェントのTierランキング**を�
 | **シーザー・キング** | 物理 | 防御 | 最強の防御エージェント。シールドとバフを両立 |
 | **バーニス** | 炎 | 異常 | 炎異常の女王。スリップダメージが凄い |
 
-![エレン・ジョー - 氷属性メインDPS](https://static.wikia.nocookie.net/zenless-zone-zero/images/3/3e/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240704083041)
+![エレン・ジョー - 氷属性メインDPS](https://static.wikia.nocookie.net/zenless-zone-zero/images/e/e3/Agent_Ellen_Joe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20241007222138)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
-![ジェーン・ドゥ - 物理異常の最適解](https://static.wikia.nocookie.net/zenless-zone-zero/images/b/b1/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240816041218)
+![ジェーン・ドゥ - 物理異常の最適解](https://static.wikia.nocookie.net/zenless-zone-zero/images/1/11/Agent_Jane_Doe_Portrait.png/revision/latest/scale-to-width-down/800?cb=20240904165715)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

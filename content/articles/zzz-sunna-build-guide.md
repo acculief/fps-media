@@ -29,7 +29,7 @@ Ver.2.6で実装されたS級サポートエージェント**千夏（Sunna）**
 
 千夏のバフ量は**初期ATKに依存**する。ATK3,500に到達すると、エーテルヴェール中のATKバフが最大値（1,050）に達する。この3,500ラインをビルドで目指すのが最優先事項だ。
 
-![千夏のゲーム内モデル（街中フォーム）](https://static.wikia.nocookie.net/zenless-zone-zero/images/7/77/Agent_Sunna_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260206194603)
+![千夏のゲーム内モデル（街中フォーム）](https://static.wikia.nocookie.net/zenless-zone-zero/images/c/c3/Agent_Sunna_In-Game_City.png/revision/latest/scale-to-width-down/800?cb=20260206194504)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 

@@ -4,14 +4,14 @@ description: "ゼンレスゾーンゼロ Ver.2.1の全容を解説。新S級エ
 category: "news"
 tags: ["Ver.2.1", "アップデート", "エヴリン"]
 date: "2025-02-12"
-thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a0/Agent_Evelyn_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250214061211"
+thumbnail: "https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d2/Agent_Evelyn_Chevalier_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250212182125"
 ---
 
 HoYoverseは2025年2月12日、アクションRPG『[ゼンレスゾーンゼロ](https://zenless.hoyoverse.com/ja-jp)』のアップデート**Ver.2.1**を配信開始した。
 
 本バージョンでは、高火力の物理アタッカー**「エヴリン」**が新エージェントとして登場するほか、バレンタインデーにあわせた期間限定イベントが開催される。本記事では主要な追加要素をまとめてお届けする。
 
-![エヴリン キャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a0/Agent_Evelyn_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250214061211)
+![エヴリン キャラクターポートレート](https://static.wikia.nocookie.net/zenless-zone-zero/images/d/d2/Agent_Evelyn_Chevalier_Portrait.png/revision/latest/scale-to-width-down/800?cb=20250212182125)
 
 <small>※画像は『ゼンレスゾーンゼロ』公式より引用</small>
 
