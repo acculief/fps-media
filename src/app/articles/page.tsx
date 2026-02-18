@@ -63,22 +63,27 @@ export default async function ArticlesPage({
           }`}
         >
           すべて
+          <span className="ml-1 text-xs opacity-70">{getAllArticles().length}</span>
         </Link>
-        {CATEGORIES.map((c) => (
-          <Link
-            key={c.slug}
-            href={`/articles?cat=${c.slug}`}
-            role="tab"
-            aria-selected={cat === c.slug}
-            className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
-              cat === c.slug
-                ? `${c.bg} ${c.border} ${c.color}`
-                : "border-gray-700 text-gray-400 hover:border-gray-500"
-            }`}
-          >
-            {c.label}
-          </Link>
-        ))}
+        {CATEGORIES.map((c) => {
+          const count = getArticlesByCategory(c.slug).length;
+          return (
+            <Link
+              key={c.slug}
+              href={`/articles?cat=${c.slug}`}
+              role="tab"
+              aria-selected={cat === c.slug}
+              className={`px-4 py-1.5 rounded-full text-sm border transition-colors whitespace-nowrap ${
+                cat === c.slug
+                  ? `${c.bg} ${c.border} ${c.color}`
+                  : "border-gray-700 text-gray-400 hover:border-gray-500"
+              }`}
+            >
+              {c.label}
+              <span className="ml-1 text-xs opacity-70">{count}</span>
+            </Link>
+          );
+        })}
       </div>
 
       {articles.length > 0 ? (

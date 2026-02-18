@@ -251,6 +251,29 @@ export default async function ArticlePage({
           <ShareButtons url={articleUrl} title={article.title} />
         </div>
 
+        {/* Engagement CTA */}
+        <div className="mt-8 bg-gradient-to-r from-yellow-400/5 to-transparent border border-yellow-400/20 rounded-lg p-6">
+          <p className="text-sm text-gray-300 mb-3">
+            この記事が参考になったら、他の記事もチェックしてみてください。
+          </p>
+          <div className="flex gap-3 flex-wrap">
+            <Link
+              href="/articles"
+              className="text-sm text-yellow-400 hover:text-yellow-300 transition-colors font-medium"
+            >
+              記事一覧を見る →
+            </Link>
+            {category && (
+              <Link
+                href={`/articles?cat=${category.slug}`}
+                className="text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                {category.label}の記事をもっと見る →
+              </Link>
+            )}
+          </div>
+        </div>
+
         {/* Prev / Next */}
         {(prev || next) && (
           <nav
