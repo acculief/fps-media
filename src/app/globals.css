@@ -11,10 +11,16 @@ body {
   font-family: var(--font-noto-sans-jp), sans-serif;
 }
 
+.article-content .table-scroll {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
 .article-content table {
   width: 100%;
+  min-width: 480px;
   border-collapse: collapse;
-  margin-bottom: 1rem;
 }
 
 .article-content th,

@@ -3,6 +3,7 @@ import {
   getAllArticles,
   getRelatedArticles,
   getReadingTime,
+  getAdjacentArticles,
 } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
@@ -59,6 +60,7 @@ export default async function ArticlePage({
 
   const category = CATEGORIES.find((c) => c.slug === article.category);
   const readingTime = getReadingTime(article.content);
+  const { prev, next } = getAdjacentArticles(slug);
   const relatedArticles = getRelatedArticles(
     slug,
     article.category,
@@ -208,6 +210,41 @@ export default async function ArticlePage({
         <div className="mt-10 pt-6 border-t border-gray-800">
           <ShareButtons url={articleUrl} title={article.title} />
         </div>
+
+        {/* Prev / Next */}
+        {(prev || next) && (
+          <nav
+            aria-label="前後の記事"
+            className="mt-10 pt-6 border-t border-gray-800 grid grid-cols-2 gap-4"
+          >
+            {prev ? (
+              <a
+                href={`/articles/${prev.slug}`}
+                className="group text-left"
+              >
+                <span className="text-xs text-gray-600">前の記事</span>
+                <span className="block text-sm text-gray-400 group-hover:text-yellow-400 transition-colors line-clamp-2 mt-1">
+                  {prev.title}
+                </span>
+              </a>
+            ) : (
+              <span />
+            )}
+            {next ? (
+              <a
+                href={`/articles/${next.slug}`}
+                className="group text-right"
+              >
+                <span className="text-xs text-gray-600">次の記事</span>
+                <span className="block text-sm text-gray-400 group-hover:text-yellow-400 transition-colors line-clamp-2 mt-1">
+                  {next.title}
+                </span>
+              </a>
+            ) : (
+              <span />
+            )}
+          </nav>
+        )}
       </article>
 
       {/* Related Articles */}

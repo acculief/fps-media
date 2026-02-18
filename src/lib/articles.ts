@@ -94,6 +94,19 @@ export function getReadingTime(content: string): number {
   return Math.max(1, Math.ceil(text.length / 500));
 }
 
+export function getAdjacentArticles(slug: string): {
+  prev: ArticleMeta | null;
+  next: ArticleMeta | null;
+} {
+  const articles = getAllArticles();
+  const index = articles.findIndex((a) => a.slug === slug);
+  if (index === -1) return { prev: null, next: null };
+  return {
+    prev: index > 0 ? articles[index - 1] : null,
+    next: index < articles.length - 1 ? articles[index + 1] : null,
+  };
+}
+
 export function getAllTags(): { tag: string; count: number }[] {
   const articles = getAllArticles();
   const tagMap = new Map<string, number>();
@@ -158,6 +171,27 @@ function rehypeLazyImages() {
   };
 }
 
+function rehypeScrollableTables() {
+  return (tree: Root) => {
+    visit(tree, "element", (node: Element, index, parent) => {
+      if (
+        node.tagName === "table" &&
+        parent &&
+        "children" in parent &&
+        typeof index === "number"
+      ) {
+        const wrapper: Element = {
+          type: "element",
+          tagName: "div",
+          properties: { className: ["table-scroll"] },
+          children: [{ ...node }],
+        };
+        (parent.children as Element[])[index] = wrapper;
+      }
+    });
+  };
+}
+
 export async function getArticle(slug: string): Promise<Article | null> {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
@@ -173,6 +207,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
     .use(rehypeRaw)
     .use(rehypeHeadingIds(toc))
     .use(rehypeLazyImages)
+    .use(rehypeScrollableTables)
     .use(rehypeStringify)
     .process(content);
 
