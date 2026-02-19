@@ -201,7 +201,7 @@ export default async function ArticlePage({
               src={article.thumbnail}
               alt={article.title}
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 768px"
               priority
             />

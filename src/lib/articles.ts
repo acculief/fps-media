@@ -6,8 +6,9 @@ import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
-import type { Root, Element } from "hast";
+import type { Root, Element, Text } from "hast";
 import { visit } from "unist-util-visit";
+import { AGENT_MAP } from "./agents";
 function hastToString(node: { type: string; value?: string; children?: { type: string; value?: string; children?: unknown[] }[] }): string {
   if (node.type === "text") return node.value ?? "";
   if (node.children) return node.children.map((c) => hastToString(c as typeof node)).join("");
@@ -262,6 +263,79 @@ function rehypeScrollableTables() {
   };
 }
 
+function rehypeAgentLinks() {
+  return (tree: Root) => {
+    visit(tree, "text", (node: Text, index, parent) => {
+      if (!parent || typeof index !== "number") return;
+      const text = node.value;
+      const regex = /\{\{([^}]+)\}\}/g;
+      let match: RegExpExecArray | null;
+      const parts: (Text | Element)[] = [];
+      let lastIndex = 0;
+
+      while ((match = regex.exec(text)) !== null) {
+        // テキスト前半
+        if (match.index > lastIndex) {
+          parts.push({ type: "text", value: text.slice(lastIndex, match.index) });
+        }
+        const agentName = match[1];
+        const agent = AGENT_MAP.get(agentName);
+        if (agent) {
+          const iconNode: Element = {
+            type: "element",
+            tagName: "img",
+            properties: {
+              src: agent.icon,
+              alt: agent.name,
+              className: ["agent-icon"],
+              width: 20,
+              height: 20,
+              loading: "lazy",
+              decoding: "async",
+            },
+            children: [],
+          };
+          const textNode: Text = { type: "text", value: agent.name };
+          if (agent.articleSlug) {
+            // ビルドガイドリンク
+            parts.push({
+              type: "element",
+              tagName: "a",
+              properties: {
+                href: `/articles/${agent.articleSlug}`,
+                className: ["agent-link"],
+              },
+              children: [iconNode, textNode],
+            });
+          } else {
+            // リンクなし
+            parts.push({
+              type: "element",
+              tagName: "span",
+              properties: { className: ["agent-mention"] },
+              children: [iconNode, textNode],
+            });
+          }
+        } else {
+          // 未知のエージェント名 → そのまま残す
+          parts.push({ type: "text", value: match[0] });
+        }
+        lastIndex = regex.lastIndex;
+      }
+
+      if (parts.length === 0) return; // マッチなし
+
+      // 残りのテキスト
+      if (lastIndex < text.length) {
+        parts.push({ type: "text", value: text.slice(lastIndex) });
+      }
+
+      // 親ノードの children を置換
+      (parent.children as (Text | Element)[]).splice(index, 1, ...parts);
+    });
+  };
+}
+
 export async function getArticle(slug: string): Promise<Article | null> {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
@@ -278,6 +352,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
     .use(rehypeHeadingIds(toc))
     .use(rehypeLazyImages)
     .use(rehypeExternalLinks)
+    .use(rehypeAgentLinks)
     .use(rehypeScrollableTables)
     .use(rehypeStringify)
     .process(content);

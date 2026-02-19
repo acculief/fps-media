@@ -188,6 +188,34 @@ body {
   color: #fbbf24;
 }
 
+/* Agent inline icons & links */
+.article-content .agent-icon {
+  display: inline;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.15em;
+  margin-right: 0.15em;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-content .agent-link {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-content .agent-link:hover {
+  color: #fde68a;
+  text-decoration: underline;
+}
+
+.article-content .agent-mention {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
 /* Focus visible for keyboard navigation */
 a:focus-visible,
 button:focus-visible {
