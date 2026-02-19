@@ -250,6 +250,9 @@ Claudeは**プロのPdM/マーケター/エンジニア**として、毎セッ�
 - [x] 人気記事ランキング（PV連動は不可のため、タグ・カテゴリベースで代替）
 - [x] 記事のOGP画像自動生成（Vercel OG Image Generation → next/og ImageResponse）
 - [x] PWA対応（manifest.json, dynamic icon/apple-icon, appleWebApp meta）
+- [x] 音動機（W-Engine）データベース（/w-engines, /w-engines/[slug]）
+- [x] ドライバディスクデータベース（/drive-discs, /drive-discs/[slug]）
+- [x] エージェントアイコン修正（千夏・ルーシー・リナのFandom Wikiマッピング修正）
 - [ ] ダークモード/ライトモード切替
 - [x] 記事詳細ページにサムネイルヒーロー画像表示
 - [x] 前後記事ナビゲーションのカードUI改善（矢印アイコン付き）

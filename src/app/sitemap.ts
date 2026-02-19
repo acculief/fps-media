@@ -1,10 +1,14 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles, getAllTags, getArticlesByTag } from "@/lib/articles";
 import { SITE_URL, CATEGORIES } from "@/lib/constants";
+import { getAllWEngines } from "@/lib/w-engines";
+import { getAllDriveDiscs } from "@/lib/drive-discs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
   const tags = getAllTags();
+  const wEngines = getAllWEngines();
+  const driveDiscs = getAllDriveDiscs();
 
   const articleEntries = articles.map((article) => ({
     url: `${SITE_URL}/articles/${article.slug}`,
@@ -61,5 +65,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryEntries,
     ...articleEntries,
     ...tagEntries,
+    // W-Engines
+    {
+      url: `${SITE_URL}/w-engines`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...wEngines.map((e) => ({
+      url: `${SITE_URL}/w-engines/${e.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    // Drive Discs
+    {
+      url: `${SITE_URL}/drive-discs`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...driveDiscs.map((d) => ({
+      url: `${SITE_URL}/drive-discs/${d.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 }

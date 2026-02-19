@@ -129,6 +129,22 @@ function Footer() {
               </li>
               <li>
                 <Link
+                  href="/w-engines"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
+                >
+                  音動機データベース
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/drive-discs"
+                  className="text-xs text-gray-400 hover:text-white transition-colors"
+                >
+                  ドライバディスクDB
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/tags"
                   className="text-xs text-gray-400 hover:text-white transition-colors"
                 >

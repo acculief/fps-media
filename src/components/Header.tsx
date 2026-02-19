@@ -64,6 +64,19 @@ export function Header() {
               {cat.label}
             </Link>
           ))}
+          <span className="text-gray-700">|</span>
+          <Link
+            href="/w-engines"
+            className="text-gray-400 hover:text-yellow-400 transition-colors"
+          >
+            音動機
+          </Link>
+          <Link
+            href="/drive-discs"
+            className="text-gray-400 hover:text-yellow-400 transition-colors"
+          >
+            ディスク
+          </Link>
           <Link
             href="/search"
             aria-label="記事を検索（⌘K）"
@@ -135,6 +148,23 @@ export function Header() {
                 {cat.label}
               </Link>
             ))}
+            <div className="border-t border-gray-800 mt-1 pt-2 flex flex-col gap-1">
+              <p className="px-3 pt-1 pb-0.5 text-xs text-gray-600 font-medium">データベース</p>
+              <Link
+                href="/w-engines"
+                onClick={() => setOpen(false)}
+                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
+              >
+                音動機一覧
+              </Link>
+              <Link
+                href="/drive-discs"
+                onClick={() => setOpen(false)}
+                className="py-2.5 px-3 rounded-lg text-sm text-gray-400 hover:bg-gray-900 hover:text-white transition-colors block"
+              >
+                ドライバディスク一覧
+              </Link>
+            </div>
             <div className="border-t border-gray-800 mt-1 pt-2 flex flex-col gap-1">
               <Link
                 href="/search"
