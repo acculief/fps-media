@@ -9,6 +9,8 @@ import rehypeStringify from "rehype-stringify";
 import type { Root, Element, Text } from "hast";
 import { visit } from "unist-util-visit";
 import { AGENT_MAP } from "./agents";
+import { W_ENGINE_NAME_MAP } from "./w-engines";
+import { DRIVE_DISC_NAME_MAP } from "./drive-discs";
 function hastToString(node: { type: string; value?: string; children?: { type: string; value?: string; children?: unknown[] }[] }): string {
   if (node.type === "text") return node.value ?? "";
   if (node.children) return node.children.map((c) => hastToString(c as typeof node)).join("");
@@ -336,6 +338,67 @@ function rehypeAgentLinks() {
   };
 }
 
+function rehypeEquipmentLinks() {
+  return (tree: Root) => {
+    visit(tree, "text", (node: Text, index, parent) => {
+      if (!parent || typeof index !== "number") return;
+      const text = node.value;
+      const regex = /\[\[([^\]]+)\]\]/g;
+      let match: RegExpExecArray | null;
+      const parts: (Text | Element)[] = [];
+      let lastIndex = 0;
+
+      while ((match = regex.exec(text)) !== null) {
+        if (match.index > lastIndex) {
+          parts.push({ type: "text", value: text.slice(lastIndex, match.index) });
+        }
+        const equipName = match[1];
+        const wEngine = W_ENGINE_NAME_MAP.get(equipName);
+        const driveDisc = DRIVE_DISC_NAME_MAP.get(equipName);
+
+        if (wEngine) {
+          parts.push({
+            type: "element",
+            tagName: "a",
+            properties: {
+              href: `/w-engines/${wEngine.slug}`,
+              className: ["equipment-link"],
+            },
+            children: [{ type: "text", value: equipName }],
+          });
+        } else if (driveDisc) {
+          parts.push({
+            type: "element",
+            tagName: "a",
+            properties: {
+              href: `/drive-discs/${driveDisc.slug}`,
+              className: ["equipment-link"],
+            },
+            children: [{ type: "text", value: equipName }],
+          });
+        } else {
+          // Unknown equipment → bold text fallback
+          parts.push({
+            type: "element",
+            tagName: "strong",
+            properties: {},
+            children: [{ type: "text", value: equipName }],
+          });
+        }
+        lastIndex = regex.lastIndex;
+      }
+
+      if (parts.length === 0) return;
+
+      if (lastIndex < text.length) {
+        parts.push({ type: "text", value: text.slice(lastIndex) });
+      }
+
+      (parent.children as (Text | Element)[]).splice(index, 1, ...parts);
+    });
+  };
+}
+
 export async function getArticle(slug: string): Promise<Article | null> {
   const fullPath = path.join(articlesDirectory, `${slug}.md`);
   if (!fs.existsSync(fullPath)) return null;
@@ -353,6 +416,7 @@ export async function getArticle(slug: string): Promise<Article | null> {
     .use(rehypeLazyImages)
     .use(rehypeExternalLinks)
     .use(rehypeAgentLinks)
+    .use(rehypeEquipmentLinks)
     .use(rehypeScrollableTables)
     .use(rehypeStringify)
     .process(content);

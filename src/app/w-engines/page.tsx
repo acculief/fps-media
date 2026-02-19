@@ -83,7 +83,7 @@ export default function WEnginesPage() {
 
       <h1 className="text-2xl font-bold mb-2">音動機データベース</h1>
       <p className="text-gray-500 text-sm mb-6">
-        ゼンレスゾーンゼロの音動機（W-Engine）一覧。特性・ランク別に検索できます。（{allEngines.length}件）
+        ゼンレスゾーンゼロの音動機一覧。特性・ランク別に検索できます。（{allEngines.length}件）
       </p>
 
       {/* Filters */}
