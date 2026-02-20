@@ -38,7 +38,7 @@ const AGENTS: AgentInfo[] = [
   { name: "浮波柚葉", icon: "/images/agents/yuzuha.png" },
   { name: "リュシア", icon: "/images/agents/lucia.png" },
   { name: "イドリー", icon: "/images/agents/yidhari.png" },
-  { name: "ダイアリン", icon: "/images/agents/dialyn.png" },
+  { name: "ダイアリン", icon: "/images/agents/dialyn.png", articleSlug: "zzz-dialyn-build-guide" },
   { name: "照", icon: "/images/agents/zhao.png" },
   { name: "盤岳", icon: "/images/agents/banyue.png" },
   { name: "千夏", icon: "/images/agents/chinatsu.png", articleSlug: "zzz-sunna-build-guide" },

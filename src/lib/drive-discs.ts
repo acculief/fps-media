@@ -177,7 +177,7 @@ export const DRIVE_DISCS: DriveDisc[] = [
     name: "大山を統べる者",
     twoSetEffect: "攻撃のブレイク値+6%",
     fourSetEffect: "撃破メンバーのスキル発動時に会心ダメージ+15%。会心率50%以上でさらに+15%。",
-    recommendedAgents: ["ライト", "橘福福"],
+    recommendedAgents: ["ライト", "橘福福", "ダイアリン"],
     category: "撃破向け",
   },
   // ── 防護向け ──
