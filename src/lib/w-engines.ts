@@ -591,7 +591,7 @@ export const W_ENGINES: WEngine[] = [
     advancedStat: "攻撃力+25%",
     effect: "氷属性ダメージ+15%。強化スキルでチーム攻撃力アップ。",
     motifAgent: "蒼角",
-    recommendedAgents: ["蒼角"],
+    recommendedAgents: ["蒼角", "アストラ・ヤオ"],
   },
   {
     slug: "rowdy-bombardum",
@@ -602,7 +602,7 @@ export const W_ENGINES: WEngine[] = [
     advancedStat: "エネルギー自動回復+50%",
     effect: "味方が敵に攻撃命中でチーム攻撃力アップ。",
     motifAgent: "ルーシー",
-    recommendedAgents: ["ルーシー"],
+    recommendedAgents: ["ルーシー", "アストラ・ヤオ"],
   },
   {
     slug: "the-vault",
@@ -613,7 +613,7 @@ export const W_ENGINES: WEngine[] = [
     advancedStat: "エネルギー自動回復+50%",
     effect: "エーテル属性スキル命中でチームダメージ+15%。",
     motifAgent: "ニコ",
-    recommendedAgents: ["ニコ"],
+    recommendedAgents: ["ニコ", "アストラ・ヤオ"],
   },
   {
     slug: "slice-of-time",

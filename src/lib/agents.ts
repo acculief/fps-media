@@ -28,7 +28,7 @@ const AGENTS: AgentInfo[] = [
   { name: "月城柳", icon: "/images/agents/yanagi.png", articleSlug: "zzz-yanagi-build-guide" },
   { name: "浅羽悠真", icon: "/images/agents/harumasa.png" },
   { name: "イヴリン", icon: "/images/agents/evelyn.png" },
-  { name: "アストラ・ヤオ", icon: "/images/agents/astra-yao.png" },
+  { name: "アストラ・ヤオ", icon: "/images/agents/astra-yao.png", articleSlug: "zzz-astra-yao-build-guide" },
   { name: "ヒューゴ", icon: "/images/agents/hugo.png" },
   { name: "ビビアン", icon: "/images/agents/vivian.png" },
   { name: "葉瞬光", icon: "/images/agents/ye-shunguang.png", articleSlug: "zzz-ye-shunguang-build-guide" },
